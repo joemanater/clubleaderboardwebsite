@@ -5,8 +5,10 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import DealCard from '../DealCard/DealCard'
-import clubs from '../../data/clubs'
+import { drivers } from '../../data/drivers/drivers'
 import './DealsCarousel.css'
+
+const topDrivers = [...drivers].sort((a, b) => b.overallScore - a.overallScore).slice(0, 6)
 
 export default function DealsCarousel() {
   return (
@@ -32,7 +34,7 @@ export default function DealsCarousel() {
             1200: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
         >
-          {clubs.map((club) => (
+          {topDrivers.map((club) => (
             <SwiperSlide key={club.id}>
               <DealCard deal={club} />
             </SwiperSlide>

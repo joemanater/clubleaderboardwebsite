@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="hero__promotions">
           <div className="container">
             <h1 className="hero__title">
-              Every Club. Ranked. Compared.
+              Every Golf Club. Ranked. Compared.
             </h1>
 
             <div className="hero__card">
