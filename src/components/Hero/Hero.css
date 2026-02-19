@@ -1,0 +1,210 @@
+/* Hero section — matches carwow promotion-tabs-hero */
+.hero {
+  background-color: var(--blue);
+  color: var(--white);
+  position: relative;
+}
+
+/* Promotions container with car background images */
+.hero__promotions {
+  text-align: center;
+  padding: 40px 0 0;
+}
+
+@media screen and (min-width: 651px) {
+  .hero__promotions {
+    /* background images removed for ClubLeaderboard rebrand */
+  }
+}
+
+/* Compare tab — side-by-side dropdowns */
+.hero__compare-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__compare-wrap .hero__input-wrap {
+  flex: 1;
+  padding: 5px 16px;
+}
+
+.hero__compare-btn {
+  flex-shrink: 0;
+}
+
+/* Title */
+.hero__title {
+  margin: 0 auto;
+  color: var(--black);
+  font-size: var(--heading-1-font-size);
+  line-height: var(--heading-1-line-height);
+  font-weight: var(--bold);
+  font-family: var(--font-family-headlines);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: var(--heading-1-letter-spacing);
+  text-wrap: balance;
+  max-width: 830px;
+  margin-bottom: 32px;
+}
+
+/* Search card — overlaps hero/content boundary */
+.hero__card {
+  background-color: var(--grey-900);
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Tabs row */
+.hero__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--grey-800);
+}
+
+.hero__tab {
+  padding: 16px 4px;
+  font-size: var(--body-medium-font-size);
+  font-weight: var(--bold);
+  color: var(--grey-500);
+  background: none;
+  position: relative;
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.hero__tab:hover {
+  color: var(--white);
+}
+
+.hero__tab--active {
+  color: var(--white);
+}
+
+.hero__tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: var(--white);
+  border-radius: 3px 3px 0 0;
+}
+
+/* Tab content area */
+.hero__tab-content {
+  padding: 20px;
+}
+
+/* Input wrap — pill shape with circular button */
+.hero__input-wrap {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 100px;
+  padding: 5px 5px 5px 20px;
+  gap: 8px;
+}
+
+.hero__input {
+  flex: 1;
+  border: none;
+  font-size: var(--body-medium-font-size);
+  line-height: var(--body-medium-line-height);
+  background: transparent;
+  color: var(--black);
+  min-width: 0;
+  padding: 8px 0;
+}
+
+.hero__input::placeholder {
+  color: var(--grey-500);
+}
+
+.hero__input:focus {
+  outline: none;
+}
+
+.hero__select {
+  flex: 1;
+  border: none;
+  font-size: var(--body-medium-font-size);
+  line-height: var(--body-medium-line-height);
+  background: transparent;
+  color: var(--black);
+  min-width: 0;
+  padding: 8px 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.hero__select:focus {
+  outline: none;
+}
+
+.hero__search-btn {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero__search-btn:hover {
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+
+.hero__search-btn:active {
+  transform: scale(0.95);
+}
+
+/* "or let us help you" helper text */
+.hero__helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: var(--body-small-font-size);
+  line-height: var(--body-small-line-height);
+  color: var(--grey-400);
+}
+
+.hero__helper-btn {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1.5px solid var(--grey-500);
+  border-radius: var(--border-radius-small);
+  font-size: var(--body-small-font-size);
+  font-weight: var(--bold);
+  color: var(--white);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.hero__helper-btn:hover {
+  border-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom spacer — the card hangs below the cyan into grey */
+.hero__spacer {
+  height: 80px;
+  background-color: var(--grey-100);
+  margin-top: -80px;
+  position: relative;
+  z-index: 0;
+}

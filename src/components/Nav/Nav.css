@@ -1,0 +1,132 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  background-color: var(--blue);
+}
+
+/* Top links bar */
+.nav__top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nav__top-inner {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav__links {
+  display: none;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__link {
+  font-size: var(--body-small-font-size);
+  font-weight: var(--bold);
+  color: var(--black);
+  transition: opacity var(--transition-fast);
+  white-space: nowrap;
+}
+
+.nav__link:hover {
+  opacity: 0.7;
+}
+
+/* Main bar */
+.nav__main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--black);
+}
+
+.nav__logo-icon {
+  flex-shrink: 0;
+}
+
+.nav__logo-text {
+  font-family: var(--font-family-headlines);
+  font-size: 28px;
+  font-weight: var(--bold);
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+/* Action buttons */
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--black);
+  transition: opacity var(--transition-fast);
+}
+
+.nav__action span {
+  font-size: 11px;
+  font-weight: var(--bold);
+}
+
+.nav__action:hover {
+  opacity: 0.7;
+}
+
+.nav__menu-btn {
+  padding: 0;
+}
+
+/* Mobile menu */
+.nav__mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  padding: 16px 0 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.nav__mobile-menu--open {
+  display: block;
+}
+
+.nav__mobile-link {
+  display: block;
+  padding: 12px var(--grid-padding);
+  font-size: var(--body-large-font-size);
+  font-weight: var(--bold);
+  color: var(--black);
+  transition: background-color var(--transition-fast);
+}
+
+.nav__mobile-link:hover {
+  background-color: var(--grey-100);
+}
+
+@media (min-width: 1025px) {
+  .nav__links {
+    display: flex;
+  }
+
+  .nav__main-inner {
+    height: 60px;
+  }
+}

@@ -1,0 +1,104 @@
+:root {
+  /* Colors — exact carwow tokens */
+  --blue: #1cdce8;
+  --blue-dark: #00909c;
+  --green: #38c498;
+  --green-dark: #289170;
+  --red: #e25834;
+  --yellow: #fed500;
+  --orange: #ff9800;
+  --black: #171717;
+  --white: #fff;
+
+  /* Greys — exact carwow tokens */
+  --grey-050: #fafafa;
+  --grey-100: #f1f1f1;
+  --grey-200: #e7e7e7;
+  --grey-300: #cfcfcf;
+  --grey-400: #b9b9b9;
+  --grey-500: #a0a0a0;
+  --grey-600: #888;
+  --grey-700: #6e6e6e;
+  --grey-800: #444;
+  --grey-900: #333;
+
+  /* Typography — carwow tokens */
+  --font-family-body: "Inter", "Trebuchet MS", sans-serif;
+  --font-family-headlines: "Barlow Condensed", "Arial Black", sans-serif;
+  --normal: 400;
+  --bold: 700;
+
+  /* Font sizes — mobile first (carwow exact) */
+  --caption-font-size: 12px;
+  --caption-line-height: 18px;
+  --body-small-font-size: 14px;
+  --body-small-line-height: 22px;
+  --body-medium-font-size: 16px;
+  --body-medium-line-height: 24px;
+  --body-large-font-size: 18px;
+  --body-large-line-height: 28px;
+
+  --heading-4-font-size: 18px;
+  --heading-4-line-height: 24px;
+  --heading-4-letter-spacing: 0;
+  --heading-3-font-size: 20px;
+  --heading-3-line-height: 24px;
+  --heading-3-letter-spacing: 0;
+  --heading-2-font-size: 24px;
+  --heading-2-line-height: 28px;
+  --heading-2-letter-spacing: 0;
+  --heading-1-font-size: 32px;
+  --heading-1-line-height: 34px;
+  --heading-1-letter-spacing: -1px;
+  --heading-text-transform: uppercase;
+
+  /* Border radius — carwow exact */
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 24px;
+  --border-radius-x-large: 48px;
+
+  /* Grid — carwow exact */
+  --grid-padding: 16px;
+  --grid-max-width: calc(1300px + 2 * var(--grid-padding));
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Z-index */
+  --z-nav: 100;
+  --z-overlay: 200;
+}
+
+/* Tablet — carwow exact breakpoint */
+@media screen and (min-width: 651px) {
+  :root {
+    --heading-4-font-size: 20px;
+    --heading-4-line-height: 28px;
+    --heading-4-letter-spacing: -0.25px;
+    --heading-3-font-size: 22px;
+    --heading-3-line-height: 26px;
+    --heading-3-letter-spacing: -0.5px;
+    --heading-2-font-size: 28px;
+    --heading-2-line-height: 32px;
+    --heading-1-font-size: 50px;
+    --heading-1-line-height: 52px;
+  }
+}
+
+/* Desktop — carwow exact breakpoint */
+@media screen and (min-width: 1025px) {
+  :root {
+    --heading-3-font-size: 24px;
+    --heading-3-line-height: 32px;
+    --heading-2-font-size: 32px;
+    --heading-2-line-height: 42px;
+    --heading-1-font-size: 56px;
+    --heading-1-line-height: 60px;
+  }
+}

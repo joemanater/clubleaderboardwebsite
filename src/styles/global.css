@@ -1,0 +1,95 @@
+@import './variables.css';
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--body-large-font-size);
+  line-height: var(--body-large-line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Typography — carwow heading hierarchy */
+h1, .as-h1 {
+  font-size: var(--heading-1-font-size);
+  line-height: var(--heading-1-line-height);
+  font-weight: var(--bold);
+  font-family: var(--font-family-headlines);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: var(--heading-1-letter-spacing);
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+h2, .as-h2 {
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
+  font-weight: var(--bold);
+  font-family: var(--font-family-headlines);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: var(--heading-2-letter-spacing, 0);
+  color: var(--black);
+}
+
+h3, .as-h3 {
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+  font-weight: var(--bold);
+  font-family: var(--font-family-body);
+  letter-spacing: var(--heading-3-letter-spacing, 0);
+  color: var(--black);
+}
+
+/* Utility: Container */
+.container {
+  width: 100%;
+  max-width: var(--grid-max-width);
+  margin: 0 auto;
+  padding-left: var(--grid-padding);
+  padding-right: var(--grid-padding);
+}
