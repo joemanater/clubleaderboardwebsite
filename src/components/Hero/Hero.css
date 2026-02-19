@@ -9,6 +9,8 @@
 .hero__promotions {
   text-align: center;
   padding: 40px 0 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (min-width: 651px) {
@@ -20,17 +22,40 @@
 /* Compare tab — side-by-side dropdowns */
 .hero__compare-wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
 
 .hero__compare-wrap .hero__input-wrap {
   flex: 1;
+  min-width: 120px;
   padding: 5px 16px;
+}
+
+.hero__compare-wrap .hero__input-wrap--category {
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__compare-wrap .hero__input-wrap--category {
+    flex: 0 1 auto;
+    min-width: 130px;
+  }
 }
 
 .hero__compare-btn {
   flex-shrink: 0;
+}
+
+.hero__select:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.hero__search-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 /* Title */
@@ -208,3 +233,4 @@
   position: relative;
   z-index: 0;
 }
+

@@ -1,0 +1,120 @@
+.club-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.club-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.club-card__rank {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-family-headlines);
+  font-size: var(--body-small-font-size);
+  font-weight: var(--bold);
+  padding: 4px 10px;
+  border-radius: var(--border-radius-small);
+  z-index: 1;
+}
+
+.club-card__image-wrap {
+  height: 180px;
+  background: var(--grey-050);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.club-card__image {
+  max-height: 150px;
+  max-width: 90%;
+  object-fit: contain;
+  transition: transform var(--transition-base);
+}
+
+.club-card:hover .club-card__image {
+  transform: scale(1.05);
+}
+
+.club-card__body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-card__manufacturer {
+  font-size: var(--caption-font-size);
+  color: var(--grey-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 2px;
+}
+
+.club-card__name {
+  font-family: var(--font-family-headlines);
+  font-size: var(--heading-4-font-size);
+  text-transform: var(--heading-text-transform);
+  margin: 0 0 10px;
+  color: var(--black);
+}
+
+.club-card__score-pill {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: var(--border-radius-large);
+  color: var(--white);
+  font-size: var(--body-small-font-size);
+  font-weight: var(--bold);
+  margin-bottom: 14px;
+}
+
+.club-card__scores {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.club-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--grey-100);
+}
+
+.club-card__price {
+  font-size: var(--body-medium-font-size);
+  font-weight: var(--bold);
+  color: var(--black);
+}
+
+.club-card__tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.club-card__tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-large);
+  background: var(--grey-100);
+  color: var(--grey-700);
+  white-space: nowrap;
+}

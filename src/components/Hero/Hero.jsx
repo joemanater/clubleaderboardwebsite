@@ -1,39 +1,51 @@
 import { useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom'
+import { CATEGORY_LIST } from '../../data/categoryConfig'
+import { HeroBackgroundPaths } from '@/components/ui/background-paths'
 import './Hero.css'
 
 const TABS = ['Find a club', 'Compare models', 'Browse rankings']
 
-const CLUB_OPTIONS = [
-  { value: '', label: 'Select a club...' },
-  { value: 'callaway-paradym', label: 'Callaway Paradym Ai Smoke' },
-  { value: 'taylormade-qi10', label: 'TaylorMade Qi10' },
-  { value: 'titleist-gt2', label: 'Titleist GT2' },
-  { value: 'ping-g430', label: 'Ping G430 Max' },
-  { value: 'cobra-darkspeed', label: 'Cobra Darkspeed' },
-  { value: 'mizuno-st-max', label: 'Mizuno ST-Max 230' },
-]
-
 export default function Hero() {
   const [activeTab, setActiveTab] = useState(0)
   const [searchValue, setSearchValue] = useState('')
+  const [compareCategory, setCompareCategory] = useState('')
   const [clubA, setClubA] = useState('')
   const [clubB, setClubB] = useState('')
   const [rankingCategory, setRankingCategory] = useState('')
+  const navigate = useNavigate()
+
+  const compareClubs = compareCategory
+    ? CATEGORY_LIST.find((c) => c.slug === compareCategory)?.data.sort((a, b) => a.name.localeCompare(b.name)) || []
+    : []
 
   const handleSearch = (e) => {
     e.preventDefault()
     if (activeTab === 0) {
-      alert(`Searching for: ${searchValue || 'all clubs'}`)
+      if (searchValue.trim()) {
+        navigate(`/search?q=${encodeURIComponent(searchValue.trim())}`)
+      }
     } else if (activeTab === 1) {
-      alert(`Comparing: ${clubA || 'Club A'} vs ${clubB || 'Club B'}`)
+      if (clubA && clubB && clubA !== clubB) {
+        navigate(`/compare?category=${compareCategory}&a=${clubA}&b=${clubB}`)
+      }
     } else {
-      alert(`Viewing rankings for: ${rankingCategory || 'all categories'}`)
+      if (rankingCategory) {
+        navigate(`/${rankingCategory}`)
+      }
     }
+  }
+
+  function handleCompareCategoryChange(slug) {
+    setCompareCategory(slug)
+    setClubA('')
+    setClubB('')
   }
 
   return (
     <>
       <section className="hero">
+        <HeroBackgroundPaths />
         <div className="hero__promotions">
           <div className="container">
             <h1 className="hero__title">
@@ -75,15 +87,28 @@ export default function Hero() {
 
                   {activeTab === 1 && (
                     <div className="hero__compare-wrap">
+                      <div className="hero__input-wrap hero__input-wrap--category">
+                        <select
+                          className="hero__select"
+                          value={compareCategory}
+                          onChange={(e) => handleCompareCategoryChange(e.target.value)}
+                        >
+                          <option value="">Category...</option>
+                          {CATEGORY_LIST.map((cat) => (
+                            <option key={cat.slug} value={cat.slug}>{cat.label}</option>
+                          ))}
+                        </select>
+                      </div>
                       <div className="hero__input-wrap">
                         <select
                           className="hero__select"
                           value={clubA}
                           onChange={(e) => setClubA(e.target.value)}
+                          disabled={!compareCategory}
                         >
                           <option value="">Club A</option>
-                          {CLUB_OPTIONS.filter(o => o.value).map((opt) => (
-                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                          {compareClubs.map((c) => (
+                            <option key={c.id} value={c.id} disabled={c.id === clubB}>{c.name}</option>
                           ))}
                         </select>
                       </div>
@@ -92,14 +117,20 @@ export default function Hero() {
                           className="hero__select"
                           value={clubB}
                           onChange={(e) => setClubB(e.target.value)}
+                          disabled={!compareCategory}
                         >
                           <option value="">Club B</option>
-                          {CLUB_OPTIONS.filter(o => o.value).map((opt) => (
-                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                          {compareClubs.map((c) => (
+                            <option key={c.id} value={c.id} disabled={c.id === clubA}>{c.name}</option>
                           ))}
                         </select>
                       </div>
-                      <button className="hero__search-btn hero__compare-btn" type="submit" aria-label="Compare">
+                      <button
+                        className="hero__search-btn hero__compare-btn"
+                        type="submit"
+                        aria-label="Compare"
+                        disabled={!clubA || !clubB || clubA === clubB}
+                      >
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5">
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
@@ -115,10 +146,9 @@ export default function Hero() {
                         onChange={(e) => setRankingCategory(e.target.value)}
                       >
                         <option value="">Select a category...</option>
-                        <option value="drivers">Drivers</option>
-                        <option value="irons">Irons</option>
-                        <option value="wedges">Wedges</option>
-                        <option value="putters">Putters</option>
+                        {CATEGORY_LIST.map((cat) => (
+                          <option key={cat.slug} value={cat.slug}>{cat.label}</option>
+                        ))}
                       </select>
                       <button className="hero__search-btn" type="submit" aria-label="View rankings">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -131,9 +161,9 @@ export default function Hero() {
 
                 <div className="hero__helper">
                   <span>or browse our</span>
-                  <a href="#" className="hero__helper-btn">
-                    2025 Driver Rankings
-                  </a>
+                  <Link to="/drivers" className="hero__helper-btn">
+                    2026 Driver Rankings
+                  </Link>
                 </div>
               </div>
             </div>

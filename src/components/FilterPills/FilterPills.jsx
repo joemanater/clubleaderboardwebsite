@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom'
+import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button'
 import './FilterPills.css'
 
 const PILLS = [
-  { label: 'Drivers', icon: '🏌️' },
-  { label: 'Irons', icon: '🎯' },
-  { label: 'Wedges', icon: '⛳' },
-  { label: 'Putters', icon: '🕳️' },
-  { label: 'Hybrids', icon: '🔀' },
-  { label: 'Fairway Woods', icon: '🌲' },
-  { label: 'Most Forgiving', icon: '🟢' },
-  { label: 'Best Value', icon: '💰' },
-  { label: 'Beginner Friendly', icon: '👋' },
+  { label: 'Drivers', to: '/drivers' },
+  { label: 'Irons', to: '/irons' },
+  { label: 'Wedges', to: '/wedges' },
+  { label: 'Putters', to: '/putters' },
+  { label: 'Hybrids', to: '/hybrids' },
+  { label: 'Fairway Woods', to: '/fairway-woods' },
+  { label: 'Most Forgiving', to: '/t/most-forgiving' },
+  { label: 'Best Value', to: '/t/best-value' },
+  { label: 'Beginner Friendly', to: '/t/beginner-friendly' },
 ]
 
 export default function FilterPills() {
@@ -18,10 +20,9 @@ export default function FilterPills() {
       <div className="container">
         <div className="filter-pills__scroll">
           {PILLS.map((pill) => (
-            <button key={pill.label} className="filter-pill">
-              <span className="filter-pill__icon">{pill.icon}</span>
-              {pill.label}
-            </button>
+            <Link key={pill.label} to={pill.to} className="filter-pills__link">
+              <InteractiveHoverButton text={pill.label} />
+            </Link>
           ))}
         </div>
       </div>

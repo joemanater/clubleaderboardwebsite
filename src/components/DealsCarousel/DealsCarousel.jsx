@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -36,7 +37,9 @@ export default function DealsCarousel() {
         >
           {topDrivers.map((club) => (
             <SwiperSlide key={club.id}>
-              <DealCard deal={club} />
+              <Link to={`/drivers/${club.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <DealCard deal={club} />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -6,60 +6,16 @@
 }
 
 .filter-pills__scroll {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  padding-bottom: 4px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-.filter-pills__scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.filter-pill {
-  flex-shrink: 0;
+.filter-pills__link {
+  text-decoration: none;
+  color: inherit;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  border-radius: 100px;
-  border: 1.5px solid var(--grey-300);
-  font-size: var(--body-small-font-size);
-  font-weight: var(--bold);
-  color: var(--black);
-  background-color: var(--white);
-  white-space: nowrap;
-  transition: background-color var(--transition-fast),
-    border-color var(--transition-fast),
-    color var(--transition-fast),
-    transform var(--transition-fast);
-}
-
-.filter-pill__icon {
-  font-size: 16px;
-  line-height: 1;
-}
-
-.filter-pill:hover {
-  background-color: var(--black);
-  border-color: var(--black);
-  color: var(--white);
-  transform: translateY(-1px);
-}
-
-.filter-pill:active {
-  transform: translateY(0);
-}
-
-@media (min-width: 1025px) {
-  .filter-pills {
-    padding: 32px 0;
-  }
-
-  .filter-pills__scroll {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  justify-content: center;
 }
