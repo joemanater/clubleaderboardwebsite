@@ -221,6 +221,31 @@
   background: var(--grey-050);
 }
 
+/* Compare links */
+.product-page__compare-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-page__compare-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--grey-050);
+  border: 1px solid var(--grey-100);
+  border-radius: 6px;
+  font-size: var(--body-small-font-size);
+  font-weight: 500;
+  color: var(--grey-900);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.product-page__compare-link:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
 /* Back button */
 .product-page__back {
   padding: 32px 0 64px;

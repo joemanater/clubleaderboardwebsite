@@ -1,0 +1,215 @@
+/* Header */
+.best-of-page__header {
+  background: linear-gradient(135deg, #0b1e25 0%, #0d3640 100%);
+  padding: 0 0 32px;
+}
+
+.best-of-page__header .breadcrumb__link,
+.best-of-page__header .breadcrumb__current {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.best-of-page__header .breadcrumb__link:hover {
+  color: var(--blue);
+}
+
+.best-of-page__header .breadcrumb__sep {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.best-of-page__title {
+  font-family: var(--font-family-headlines);
+  font-size: var(--heading-1-font-size);
+  line-height: var(--heading-1-line-height);
+  text-transform: var(--heading-text-transform);
+  color: var(--white);
+  margin: 0;
+}
+
+/* Intro */
+.best-of-page__intro {
+  max-width: 760px;
+  margin: 32px 0 40px;
+}
+
+.best-of-page__intro p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--dark-grey);
+}
+
+/* List */
+.best-of-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.best-of-page__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--white);
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.best-of-page__card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.best-of-page__rank {
+  font-family: var(--font-family-headlines);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--dark-grey);
+  min-width: 40px;
+  text-align: center;
+}
+
+.best-of-page__card-img-wrap {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.best-of-page__card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.best-of-page__card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.best-of-page__card-mfr {
+  font-size: 0.75rem;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.best-of-page__card-name {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin: 2px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.best-of-page__card-price {
+  font-size: 0.875rem;
+  color: var(--dark-grey);
+}
+
+.best-of-page__card-scores {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.best-of-page__card-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: var(--white);
+  min-width: 60px;
+}
+
+.best-of-page__card-highlight-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.best-of-page__card-highlight-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.best-of-page__card-overall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+}
+
+.best-of-page__card-overall-num {
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.best-of-page__card-overall-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  color: var(--dark-grey);
+}
+
+@media (max-width: 600px) {
+  .best-of-page__card {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .best-of-page__card-img-wrap {
+    width: 56px;
+    height: 56px;
+  }
+  .best-of-page__card-scores {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 56px;
+  }
+}
+
+/* Compare section */
+.best-of-page__compare-section {
+  margin-bottom: 48px;
+}
+
+.best-of-page__compare-title {
+  font-family: var(--font-family-headlines);
+  text-transform: var(--heading-text-transform);
+  font-size: var(--heading-2-font-size);
+  margin-bottom: 16px;
+}
+
+.best-of-page__compare-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.best-of-page__compare-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--off-white);
+  border: 1px solid var(--light-grey);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.best-of-page__compare-link:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}

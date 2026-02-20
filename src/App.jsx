@@ -8,6 +8,8 @@ import ProductPage from './pages/ProductPage/ProductPage'
 import TagPage from './pages/TagPage/TagPage'
 import SearchPage from './pages/SearchPage/SearchPage'
 import ComparePage from './pages/ComparePage/ComparePage'
+import ComparisonDetailPage from './pages/ComparisonDetailPage/ComparisonDetailPage'
+import BestOfPage from './pages/BestOfPage/BestOfPage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import PrivacyPage from './pages/PrivacyPage/PrivacyPage'
 import './App.css'
@@ -22,6 +24,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/compare" element={<ComparePage />} />
+          <Route path="/compare/:comparisonSlug" element={<ComparisonDetailPage />} />
+          <Route path="/best/:bestOfSlug" element={<BestOfPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/t/:tagSlug" element={<TagPage />} />

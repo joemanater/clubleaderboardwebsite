@@ -100,7 +100,8 @@ export function generateSitemap(
   allClubs: { id: string; categorySlug: string }[],
   comparisons: { slug: string }[],
   categories: string[],
-  tags: string[] = []
+  tags: string[] = [],
+  bestOfPages: { slug: string }[] = []
 ): string {
   const urls: string[] = [
     `  <url><loc>${SITE_URL}</loc><priority>1.0</priority></url>`,
@@ -129,6 +130,11 @@ export function generateSitemap(
 
   for (const comp of comparisons) {
     urls.push(`  <url><loc>${SITE_URL}/compare/${comp.slug}</loc><priority>0.7</priority></url>`);
+  }
+
+  // Best-of pages
+  for (const page of bestOfPages) {
+    urls.push(`  <url><loc>${SITE_URL}/best/${page.slug}</loc><priority>0.8</priority></url>`);
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>

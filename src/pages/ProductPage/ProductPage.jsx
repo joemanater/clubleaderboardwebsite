@@ -1,8 +1,9 @@
 import { useParams, Navigate, Link } from 'react-router-dom'
-import { getProductById } from '../../data/categoryConfig'
+import { getProductById, CATEGORIES } from '../../data/categoryConfig'
 import { getScoreColor, getScoreLabel } from '../../data/shared/scoring'
 import { manufacturers } from '../../data/shared/manufacturers'
 import { generateProductSEO } from '../../data/shared/seo'
+import { getComparisonSlug, getRelatedComparisons, getAllComparisonSlugs } from '../../data/shared/comparisons-util'
 import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import ScoreBar from '../../components/ScoreBar/ScoreBar'
@@ -145,6 +146,26 @@ export default function ProductPage() {
             </table>
           </section>
         )}
+
+        {/* Compare this driver */}
+        {categorySlug === 'drivers' && (() => {
+          const allDrivers = CATEGORIES.drivers?.data || []
+          const allSlugs = getAllComparisonSlugs()
+          const related = getRelatedComparisons(product.id, allSlugs, allDrivers)
+          if (related.length === 0) return null
+          return (
+            <section className="product-page__section">
+              <h2 className="product-page__section-title">Compare {product.name}</h2>
+              <div className="product-page__compare-links">
+                {related.map((r) => (
+                  <Link key={r.slug} to={`/compare/${r.slug}`} className="product-page__compare-link">
+                    {r.label} &rarr;
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )
+        })()}
 
         <div className="product-page__back">
           <Link to={`/${category.slug}`} className="product-page__back-btn">
