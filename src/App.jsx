@@ -12,11 +12,13 @@ import ComparisonDetailPage from './pages/ComparisonDetailPage/ComparisonDetailP
 import BestOfPage from './pages/BestOfPage/BestOfPage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import PrivacyPage from './pages/PrivacyPage/PrivacyPage'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
 export default function App() {
   return (
     <div className="app">
+      <Analytics />
       <ScrollToTop />
       <Nav />
       <main style={{ flex: 1 }}>
