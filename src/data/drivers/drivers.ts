@@ -1534,7 +1534,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 549,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/taylormade-qi4d',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057755-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi4D-Driver/DW-TA070.html',
     playerType: ['low', 'mid'],
     description:
@@ -1594,7 +1594,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 549,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/taylormade-qi4d-ls',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057754-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi4D-LS-Driver/DW-TA071.html',
     playerType: ['low'],
     description:
@@ -1654,7 +1654,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 549,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/taylormade-qi4d-max',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057756-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi4D-Max-Driver/DW-TA072.html',
     playerType: ['mid', 'high'],
     description:
@@ -1716,7 +1716,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 549,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/taylormade-qi4d-max-lite',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057757-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi4D-Max-Lite-Driver/DW-TA073.html',
     playerType: ['mid', 'high'],
     description:
@@ -1778,7 +1778,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 650,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/callaway-quantum-max',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058208-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/drivers/driver-quantum-max.html',
     playerType: ['mid', 'high'],
     description:
@@ -1835,7 +1835,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 650,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/callaway-quantum-max-d',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058209-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/drivers/drivers-2026-quantum-max-d.html',
     playerType: ['high', 'beginner'],
     description:
@@ -1893,7 +1893,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 700,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/callaway-quantum-triple-diamond',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058210-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/drivers/drivers-2026-quantum-triple-diamond.html',
     playerType: ['low'],
     description:
@@ -1949,7 +1949,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 700,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/callaway-quantum-triple-diamond-max',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058423-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/drivers/drivers-2026-quantum-triple-diamond-max.html',
     playerType: ['low', 'mid'],
     description:
@@ -2005,7 +2005,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 700,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/callaway-quantum-max-fast',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058211-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/drivers/drivers-2026-quantum-max-fast.html',
     playerType: ['mid', 'high'],
     description:
@@ -2065,7 +2065,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 599,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/ping-g440',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000047630-01_pc',
     productUrl: 'https://ping.com/en-us/shop/clubs/drivers/g440',
     playerType: ['low', 'mid'],
     description:
@@ -2119,7 +2119,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 599,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/ping-g440-max',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000047630-01_pc',
     productUrl: 'https://ping.com/en-us/shop/clubs/drivers/g440-max',
     playerType: ['mid', 'high'],
     description:
@@ -2174,7 +2174,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 649,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/ping-g440k',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057743-01_pc',
     productUrl: 'https://ping.com/en-us/shop/clubs/drivers/g440k',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -2237,7 +2237,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 599,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/titleist-gt2-2026',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000045824-01_pc',
     productUrl: 'https://www.titleist.com/golf-clubs/drivers/gt2-2026',
     playerType: ['low', 'mid'],
     description:
@@ -2293,7 +2293,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 599,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/titleist-gt3-2026',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000045868-01_pc',
     productUrl: 'https://www.titleist.com/golf-clubs/drivers/gt3-2026',
     playerType: ['low'],
     description:
@@ -2351,7 +2351,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 599,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/titleist-gt4-2026',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000045978-01_pc',
     productUrl: 'https://www.titleist.com/golf-clubs/drivers/gt4-2026',
     playerType: ['low'],
     description:
@@ -2412,7 +2412,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 479,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/cobra-optm-x',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058199-01_pc',
     productUrl: 'https://www.cobragolf.com/optm-x-driver',
     playerType: ['low', 'mid'],
     description:
@@ -2468,7 +2468,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 479,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/cobra-optm-ls',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058197-01_pc',
     productUrl: 'https://www.cobragolf.com/optm-ls-driver',
     playerType: ['low'],
     description:
@@ -2524,7 +2524,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 479,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/cobra-optm-max-d',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058198-01_pc',
     productUrl: 'https://www.cobragolf.com/optm-max-d-driver',
     playerType: ['mid', 'high'],
     description:
@@ -2580,7 +2580,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 479,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/cobra-optm-max-k',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058200-01_pc',
     productUrl: 'https://www.cobragolf.com/optm-max-k-driver',
     playerType: ['high', 'beginner'],
     description:
@@ -2640,7 +2640,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 449,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/srixon-zxi',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050434-01_pc',
     productUrl: 'https://www.srixon.com/zxi-driver',
     playerType: ['low', 'mid'],
     description:
@@ -2695,7 +2695,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 449,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/srixon-zxi-max',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050439-01_pc',
     productUrl: 'https://www.srixon.com/zxi-max-driver',
     playerType: ['mid', 'high'],
     description:
@@ -2755,7 +2755,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 399,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/pxg-lightning-tour-mid',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/Lightning-Drivers-Tour-Mid-Beauty.jpg?v=1764640732&width=3000',
     productUrl: 'https://www.pxg.com/en-us/clubs/drivers/lightning-tour-mid',
     playerType: ['low', 'mid'],
     description:
@@ -2811,7 +2811,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 399,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/pxg-lightning-max',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/Lightning-Drivers-Max-10K_-Beauty_6bcb324e-9378-4941-86eb-184aa9346ddf.jpg?v=1764952131&width=1200',
     productUrl: 'https://www.pxg.com/en-us/clubs/drivers/lightning-max',
     playerType: ['mid', 'high'],
     description:
@@ -2867,7 +2867,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 399,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/cleveland-launcher-xl2',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041012-01_pc',
     productUrl: 'https://www.clevelandgolf.com/launcher-xl2-driver',
     playerType: ['high', 'beginner'],
     description:
@@ -2921,7 +2921,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 399,
     currency: 'USD',
-    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/wilson-dynapower-max-2026',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058538-01_pc',
     productUrl: 'https://www.wilson.com/en-us/golf/clubs/drivers/dynapower-max-2026',
     playerType: ['mid', 'high'],
     description:
