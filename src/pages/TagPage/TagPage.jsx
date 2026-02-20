@@ -1,14 +1,15 @@
 import { useParams, Navigate, Link } from 'react-router-dom'
 import { getTagBySlug } from '../../data/categoryConfig'
-import usePageTitle from '../../hooks/usePageTitle'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import ClubCard from '../../components/ClubCard/ClubCard'
 import './TagPage.css'
 
+const SITE_URL = 'https://clubleaderboard.com'
+
 export default function TagPage() {
   const { tagSlug } = useParams()
   const tag = getTagBySlug(tagSlug)
-  usePageTitle(tag ? `${tag.label} Golf Clubs 2026` : null)
 
   if (!tag) return <Navigate to="/" replace />
 
@@ -16,6 +17,19 @@ export default function TagPage() {
 
   return (
     <div className="tag-page">
+      <SEOHead
+        title={`${tag.label} Golf Clubs 2026 | ClubLeaderboard`}
+        description={`${tag.description}. Browse the top ${tag.label.toLowerCase()} golf clubs across every category — ranked and compared independently.`}
+        canonical={`${SITE_URL}/t/${tag.slug}`}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: `${tag.label} Golf Clubs 2026`,
+          description: tag.description,
+          url: `${SITE_URL}/t/${tag.slug}`,
+          publisher: { '@type': 'Organization', name: 'ClubLeaderboard' },
+        }}
+      />
       <div className="tag-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: tag.label }]} />

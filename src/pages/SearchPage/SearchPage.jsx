@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { CATEGORY_LIST } from '../../data/categoryConfig'
 import { manufacturers } from '../../data/shared/manufacturers'
-import usePageTitle from '../../hooks/usePageTitle'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import ClubCard from '../../components/ClubCard/ClubCard'
 import './SearchPage.css'
+
+const SITE_URL = 'https://clubleaderboard.com'
 
 function searchAllClubs(query) {
   const q = query.toLowerCase().trim()
@@ -37,7 +39,6 @@ export default function SearchPage() {
   const query = searchParams.get('q') || ''
   const [input, setInput] = useState(query)
   const results = searchAllClubs(query)
-  usePageTitle(query ? `Search: ${query}` : 'Search Golf Clubs')
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -49,6 +50,11 @@ export default function SearchPage() {
 
   return (
     <div className="search-page">
+      <SEOHead
+        title={query ? `Search: ${query} | ClubLeaderboard` : 'Search Golf Clubs | ClubLeaderboard'}
+        description="Search across all golf club categories. Find drivers, irons, wedges, putters, hybrids, and fairway woods by brand or model name."
+        canonical={`${SITE_URL}/search`}
+      />
       <div className="search-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: 'Search' }]} />

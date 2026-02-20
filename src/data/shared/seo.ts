@@ -4,15 +4,17 @@ const SITE_URL = 'https://clubleaderboard.com';
 const SITE_NAME = 'ClubLeaderboard';
 
 export function generateProductSEO(
-  club: BaseGolfClub & { overallScore: number }
+  club: BaseGolfClub & { overallScore: number },
+  categorySlug?: string
 ): SEOMetadata {
   const title = `${club.name} Review - ${(club as any).overallScore}/10 | ${SITE_NAME}`;
   const description = `${club.name} scores ${(club as any).overallScore}/10 in our independent testing. See detailed ratings for forgiveness, distance, feel, and more. MSRP: $${club.msrp}.`;
+  const slug = categorySlug || `${club.category}s`;
 
   return {
     title: title.slice(0, 60),
     description: description.slice(0, 160),
-    canonical: `${SITE_URL}/${club.category}s/${club.id}`,
+    canonical: `${SITE_URL}/${slug}/${club.id}`,
     ogTitle: title,
     ogDescription: description,
     ogImage: `${SITE_URL}${club.imageUrl}`,
@@ -65,8 +67,8 @@ export function generateCategoryRankingSEO(
   clubs: (BaseGolfClub & { overallScore: number })[]
 ): SEOMetadata {
   const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
-  const title = `Best ${categoryTitle} 2025 - Rankings & Reviews | ${SITE_NAME}`;
-  const description = `Compare the top ${clubs.length} ${category} of 2025. Independent ratings, head-to-head comparisons, and expert analysis to find the best ${category} for your game.`;
+  const title = `Best ${categoryTitle} 2026 - Rankings & Reviews | ${SITE_NAME}`;
+  const description = `Compare the top ${clubs.length} ${category} of 2026. Independent ratings, head-to-head comparisons, and expert analysis to find the best ${category} for your game.`;
 
   return {
     title: title.slice(0, 60),
@@ -77,7 +79,7 @@ export function generateCategoryRankingSEO(
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: `Best ${categoryTitle} 2025`,
+      name: `Best ${categoryTitle} 2026`,
       numberOfItems: clubs.length,
       itemListElement: clubs
         .sort((a, b) => b.overallScore - a.overallScore)
@@ -95,20 +97,34 @@ export function generateCategoryRankingSEO(
 }
 
 export function generateSitemap(
-  allClubs: (BaseGolfClub & { overallScore: number })[],
+  allClubs: { id: string; categorySlug: string }[],
   comparisons: { slug: string }[],
-  categories: string[]
+  categories: string[],
+  tags: string[] = []
 ): string {
   const urls: string[] = [
     `  <url><loc>${SITE_URL}</loc><priority>1.0</priority></url>`,
   ];
 
+  // Static pages
+  const staticPages = ['/search', '/compare', '/about', '/privacy'];
+  for (const page of staticPages) {
+    urls.push(`  <url><loc>${SITE_URL}${page}</loc><priority>0.5</priority></url>`);
+  }
+
+  // Category pages
   for (const category of categories) {
     urls.push(`  <url><loc>${SITE_URL}/${category}</loc><priority>0.9</priority></url>`);
   }
 
+  // Tag pages
+  for (const tag of tags) {
+    urls.push(`  <url><loc>${SITE_URL}/t/${tag}</loc><priority>0.7</priority></url>`);
+  }
+
+  // Product pages
   for (const club of allClubs) {
-    urls.push(`  <url><loc>${SITE_URL}/${club.category}s/${club.id}</loc><priority>0.8</priority></url>`);
+    urls.push(`  <url><loc>${SITE_URL}/${club.categorySlug}/${club.id}</loc><priority>0.8</priority></url>`);
   }
 
   for (const comp of comparisons) {

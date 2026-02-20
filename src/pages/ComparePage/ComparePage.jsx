@@ -3,9 +3,11 @@ import { useSearchParams, Link } from 'react-router-dom'
 import { CATEGORY_LIST, getCategoryBySlug } from '../../data/categoryConfig'
 import { manufacturers } from '../../data/shared/manufacturers'
 import { getScoreColor, getScoreLabel } from '../../data/shared/scoring'
-import usePageTitle from '../../hooks/usePageTitle'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import './ComparePage.css'
+
+const SITE_URL = 'https://clubleaderboard.com'
 
 const PLAYER_LABELS = {
   low: 'Low HCP',
@@ -39,7 +41,6 @@ function formatSpecKey(key) {
 }
 
 export default function ComparePage() {
-  usePageTitle('Compare Golf Clubs Side by Side')
   const [searchParams, setSearchParams] = useSearchParams()
 
   const initialCat = searchParams.get('category') || ''
@@ -91,6 +92,19 @@ export default function ComparePage() {
 
   return (
     <div className="compare-page">
+      <SEOHead
+        title="Compare Golf Clubs Side by Side | ClubLeaderboard"
+        description="Compare golf clubs head-to-head with independent performance scores. See how drivers, irons, wedges, putters, hybrids, and fairway woods stack up."
+        canonical={`${SITE_URL}/compare`}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Compare Golf Clubs Side by Side',
+          description: 'Compare golf clubs head-to-head with independent performance scores.',
+          url: `${SITE_URL}/compare`,
+          publisher: { '@type': 'Organization', name: 'ClubLeaderboard' },
+        }}
+      />
       <div className="compare-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: 'Compare' }]} />

@@ -12,6 +12,21 @@ import './DealsCarousel.css'
 const topDrivers = [...drivers].sort((a, b) => b.overallScore - a.overallScore).slice(0, 6)
 
 export default function DealsCarousel() {
+  if (typeof window === 'undefined') {
+    return (
+      <section className="deals">
+        <div className="container">
+          <div className="deals__header">
+            <h2 className="deals__heading">Top Ranked Drivers</h2>
+            <p className="deals__subheading">
+              The highest-scoring drivers in our independent testing
+            </p>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section className="deals">
       <div className="container">

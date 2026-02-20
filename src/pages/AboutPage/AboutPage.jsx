@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
-import usePageTitle from '../../hooks/usePageTitle'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import './AboutPage.css'
+
+const SITE_URL = 'https://clubleaderboard.com'
 
 const STATS = [
   { number: '133+', label: 'Clubs Ranked' },
@@ -51,9 +53,21 @@ const VALUES = [
 ]
 
 export default function AboutPage() {
-  usePageTitle('About — Independent Golf Club Rankings You Can Trust')
   return (
     <div className="about-page">
+      <SEOHead
+        title="About ClubLeaderboard — Independent Golf Club Rankings"
+        description="ClubLeaderboard is the trusted destination for independent golf club rankings. Learn how we test, score, and compare every club — no sponsors, no bias, just data."
+        canonical={`${SITE_URL}/about`}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          name: 'About ClubLeaderboard',
+          description: 'Independent golf club rankings — no sponsors, no bias, just data.',
+          url: `${SITE_URL}/about`,
+          publisher: { '@type': 'Organization', name: 'ClubLeaderboard' },
+        }}
+      />
       <div className="about-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: 'About' }]} />

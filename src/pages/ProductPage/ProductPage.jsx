@@ -2,7 +2,8 @@ import { useParams, Navigate, Link } from 'react-router-dom'
 import { getProductById } from '../../data/categoryConfig'
 import { getScoreColor, getScoreLabel } from '../../data/shared/scoring'
 import { manufacturers } from '../../data/shared/manufacturers'
-import usePageTitle from '../../hooks/usePageTitle'
+import { generateProductSEO } from '../../data/shared/seo'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import ScoreBar from '../../components/ScoreBar/ScoreBar'
 import './ProductPage.css'
@@ -38,11 +39,11 @@ function formatSpecKey(key) {
 export default function ProductPage() {
   const { categorySlug, productId } = useParams()
   const result = getProductById(categorySlug, productId)
-  usePageTitle(result ? `${result.product.name} Review & Score` : null)
 
   if (!result) return <Navigate to="/" replace />
 
   const { product, category } = result
+  const seo = generateProductSEO(product, categorySlug)
   const mfr = manufacturers[product.manufacturer]
   const mfrName = mfr ? mfr.name : product.manufacturer
   const scoreColor = getScoreColor(product.overallScore)
@@ -50,6 +51,7 @@ export default function ProductPage() {
 
   return (
     <div className="product-page">
+      <SEOHead {...seo} />
       <div className="product-page__header-bg">
         <div className="container">
           <Breadcrumb

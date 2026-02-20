@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import { getCategoryBySlug } from '../../data/categoryConfig'
-import usePageTitle from '../../hooks/usePageTitle'
+import { generateCategoryRankingSEO } from '../../data/shared/seo'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import ClubCard from '../../components/ClubCard/ClubCard'
 import './CategoryPage.css'
@@ -33,14 +34,14 @@ export default function CategoryPage() {
   const category = getCategoryBySlug(categorySlug)
   const [sortBy, setSortBy] = useState('top-rated')
 
-  usePageTitle(category ? `Best ${category.label} 2026 — Rankings & Reviews` : null)
-
   if (!category) return <Navigate to="/" replace />
 
+  const seo = generateCategoryRankingSEO(categorySlug, category.data)
   const clubs = sortClubs(category.data, sortBy)
 
   return (
     <div className="category-page">
+      <SEOHead {...seo} />
       <div className="category-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: category.label }]} />

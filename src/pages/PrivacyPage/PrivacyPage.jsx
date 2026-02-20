@@ -1,12 +1,17 @@
-import usePageTitle from '../../hooks/usePageTitle'
+import SEOHead from '../../components/SEOHead/SEOHead'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import './PrivacyPage.css'
 
-export default function PrivacyPage() {
-  usePageTitle('Privacy Policy')
+const SITE_URL = 'https://clubleaderboard.com'
 
+export default function PrivacyPage() {
   return (
     <div className="privacy-page">
+      <SEOHead
+        title="Privacy Policy | ClubLeaderboard"
+        description="ClubLeaderboard's privacy policy. Learn how we collect, use, and safeguard your information."
+        canonical={`${SITE_URL}/privacy`}
+      />
       <div className="privacy-page__header">
         <div className="container">
           <Breadcrumb items={[{ label: 'Privacy Policy' }]} />
