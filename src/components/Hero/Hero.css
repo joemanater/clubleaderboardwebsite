@@ -88,8 +88,8 @@
 .hero__tabs {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  padding: 0 20px;
+  gap: 8px;
+  padding: 0 12px;
   border-bottom: 1px solid var(--grey-800);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -100,15 +100,29 @@
   display: none;
 }
 
+@media screen and (min-width: 651px) {
+  .hero__tabs {
+    gap: 24px;
+    padding: 0 20px;
+  }
+}
+
 .hero__tab {
-  padding: 16px 4px;
-  font-size: var(--body-medium-font-size);
+  padding: 14px 4px;
+  font-size: var(--body-small-font-size);
   font-weight: var(--bold);
   color: var(--grey-500);
   background: none;
   position: relative;
   transition: color var(--transition-fast);
   white-space: nowrap;
+}
+
+@media screen and (min-width: 651px) {
+  .hero__tab {
+    padding: 16px 4px;
+    font-size: var(--body-medium-font-size);
+  }
 }
 
 .hero__tab:hover {
