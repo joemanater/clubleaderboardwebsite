@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { CATEGORY_LIST } from '../../data/categoryConfig'
-import { HeroBackgroundPaths } from '@/components/ui/background-paths'
 import './Hero.css'
 
 const TABS = ['Find a club', 'Compare models', 'Browse rankings']
@@ -45,7 +44,6 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <HeroBackgroundPaths />
         <div className="hero__promotions">
           <div className="container">
             <h1 className="hero__title">
