@@ -10,7 +10,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2025,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/taylormade-qi35.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000049396-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi35-Fairway/qi35-fairway.html',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -60,7 +60,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2025,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/taylormade-qi35-tour.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000049393-01_pc',
     productUrl: 'https://www.taylormadegolf.com/Qi35-Tour-Fairway/qi35-tour-fairway.html',
     playerType: ['low', 'mid'],
     description:
@@ -111,7 +111,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/callaway-paradym-ai-smoke.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040784-01_pc',
     productUrl: 'https://www.callawaygolf.com/fairway-woods/paradym-ai-smoke.html',
     playerType: ['low', 'mid'],
     description:
@@ -160,7 +160,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/callaway-ai-smoke-max.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040784-01_pc',
     productUrl: 'https://www.callawaygolf.com/fairway-woods/ai-smoke-max-fairway.html',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -212,7 +212,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2025,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/titleist-gt2.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000046014-01_pc',
     productUrl: 'https://www.titleist.com/product/gt2-fairway.html',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -261,7 +261,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2025,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/titleist-gt3.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000046015-01_pc',
     productUrl: 'https://www.titleist.com/product/gt3-fairway.html',
     playerType: ['low', 'mid'],
     description:
@@ -312,7 +312,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 329,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/ping-g430-max.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000032564-01_pc',
     productUrl: 'https://ping.com/en-us/shop/fairway-woods/g430-max',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -362,7 +362,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 329,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/ping-g430-sft.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000032565-01_pc',
     productUrl: 'https://ping.com/en-us/shop/fairway-woods/g430-sft',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -414,7 +414,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/cobra-darkspeed.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040745-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-fairway',
     playerType: ['low', 'mid'],
     description:
@@ -463,7 +463,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/cobra-darkspeed-max.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040746-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-max-fairway',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -515,7 +515,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 279,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/srixon-zx-mk-ii.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033973-01_pc',
     productUrl: 'https://www.srixon.com/us/fairway-woods/zx-mk-ii-fairway-wood/',
     playerType: ['low', 'mid'],
     description:
@@ -566,7 +566,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/mizuno-st-max-230.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000042181-01_pc',
     productUrl: 'https://www.mizunogolf.com/fairway-woods/st-max-230/',
     playerType: ['mid', 'high'],
     description:
@@ -614,7 +614,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/mizuno-st-z-230.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034350-01_pc',
     productUrl: 'https://www.mizunogolf.com/fairway-woods/st-z-230/',
     playerType: ['low', 'mid'],
     description:
@@ -665,7 +665,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 279,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/pxg-0311-gen6.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-Fairway-Beauty.jpg',
     productUrl: 'https://www.pxg.com/en-us/clubs/fairway-woods/0311-gen6',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -717,7 +717,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/wilson-dynapower.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034386-01_pc',
     productUrl: 'https://www.wilson.com/en-us/golf/fairway-woods/dynapower-fairway-wood',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -769,7 +769,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/tour-edge-exotics-c725.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000048467-01_pc',
     productUrl: 'https://www.touredge.com/clubs/fairway-woods/exotics-c725',
     playerType: ['mid', 'high'],
     description:
@@ -821,7 +821,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2024,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/xxio-13.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041044-01_pc',
     productUrl: 'https://www.xxio.com/us/fairway-woods/xxio-13-fairway-wood',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -873,7 +873,7 @@ export const fairwayWoods: FairwayWood[] = [
     year: 2023,
     msrp: 329,
     currency: 'USD',
-    imageUrl: '/images/fairway-woods/honma-gs.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000019407-01_pc',
     productUrl: 'https://www.honmagolf.com/us/fairway-woods/gs-fairway-wood',
     playerType: ['mid', 'high'],
     description:

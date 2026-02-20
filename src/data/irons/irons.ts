@@ -14,7 +14,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-p7mb.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033318-01_pc',
     productUrl: 'https://www.taylormadegolf.com/p7mb-irons/',
     playerType: ['low'],
     description:
@@ -81,7 +81,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-p7mc.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033319-01_pc',
     productUrl: 'https://www.taylormadegolf.com/p7mc-irons/',
     playerType: ['low'],
     description:
@@ -148,7 +148,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-p770.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033320-01_pc',
     productUrl: 'https://www.taylormadegolf.com/p770-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -215,7 +215,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-p790.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000037836-01_pc',
     productUrl: 'https://www.taylormadegolf.com/p790-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -283,7 +283,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-qi.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040768-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi-irons/',
     playerType: ['mid', 'high'],
     description:
@@ -351,7 +351,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/taylormade-qi-hl.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040775-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi-hl-irons/',
     playerType: ['high', 'beginner'],
     description:
@@ -423,7 +423,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/callaway-apex-mb.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000038660-01_pc',
     productUrl: 'https://www.callawaygolf.com/apex-mb-irons/',
     playerType: ['low'],
     description:
@@ -490,7 +490,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/callaway-apex-pro.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000038388-01_pc',
     productUrl: 'https://www.callawaygolf.com/apex-pro-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -557,7 +557,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1200,
     currency: 'USD',
-    imageUrl: '/images/irons/callaway-apex.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000017592-01_pc',
     productUrl: 'https://www.callawaygolf.com/apex-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -625,7 +625,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1100,
     currency: 'USD',
-    imageUrl: '/images/irons/callaway-paradym-ai-smoke.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040791-01_pc',
     productUrl: 'https://www.callawaygolf.com/paradym-ai-smoke-irons/',
     playerType: ['mid', 'high'],
     description:
@@ -693,7 +693,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 900,
     currency: 'USD',
-    imageUrl: '/images/irons/callaway-big-bertha.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000036123-01_pc',
     productUrl: 'https://www.callawaygolf.com/big-bertha-irons/',
     playerType: ['high', 'beginner'],
     description:
@@ -765,7 +765,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/titleist-620-mb.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000008330-01_pc',
     productUrl: 'https://www.titleist.com/620-mb-irons',
     playerType: ['low'],
     description:
@@ -832,7 +832,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/titleist-t100.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000037825-01_pc',
     productUrl: 'https://www.titleist.com/t100-irons',
     playerType: ['low', 'mid'],
     description:
@@ -900,7 +900,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/titleist-t150.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000037826-01_pc',
     productUrl: 'https://www.titleist.com/t150-irons',
     playerType: ['low', 'mid'],
     description:
@@ -967,7 +967,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/titleist-t200.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000037828-01_pc',
     productUrl: 'https://www.titleist.com/t200-irons',
     playerType: ['mid', 'high'],
     description:
@@ -1035,7 +1035,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/titleist-t350.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000037832-01_pc',
     productUrl: 'https://www.titleist.com/t350-irons',
     playerType: ['high', 'beginner'],
     description:
@@ -1108,7 +1108,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1275,
     currency: 'USD',
-    imageUrl: '/images/irons/ping-i230.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000032526-01_pc',
     productUrl: 'https://ping.com/en-us/shop/irons/i230',
     playerType: ['low', 'mid'],
     description:
@@ -1177,7 +1177,7 @@ export const irons: Iron[] = [
     year: 2022,
     msrp: 1275,
     currency: 'USD',
-    imageUrl: '/images/irons/ping-i525.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000025120-01_pc',
     productUrl: 'https://ping.com/en-us/shop/irons/i525',
     playerType: ['low', 'mid'],
     description:
@@ -1245,7 +1245,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/ping-g430.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000032569-01_pc',
     productUrl: 'https://ping.com/en-us/shop/irons/g430',
     playerType: ['mid', 'high'],
     description:
@@ -1313,7 +1313,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1275,
     currency: 'USD',
-    imageUrl: '/images/irons/ping-g730.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000042243-01_pc',
     productUrl: 'https://ping.com/en-us/shop/irons/g730',
     playerType: ['mid', 'high'],
     description:
@@ -1386,7 +1386,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1050,
     currency: 'USD',
-    imageUrl: '/images/irons/cobra-king-tour.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034371-01_pc',
     productUrl: 'https://www.cobragolf.com/king-tour-irons',
     playerType: ['low', 'mid'],
     description:
@@ -1452,7 +1452,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 900,
     currency: 'USD',
-    imageUrl: '/images/irons/cobra-darkspeed.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040751-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-irons',
     playerType: ['mid', 'high'],
     description:
@@ -1520,7 +1520,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 700,
     currency: 'USD',
-    imageUrl: '/images/irons/cobra-air-x-2.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000039406-01_pc',
     productUrl: 'https://www.cobragolf.com/air-x-2-irons',
     playerType: ['high', 'beginner'],
     description:
@@ -1592,7 +1592,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1200,
     currency: 'USD',
-    imageUrl: '/images/irons/srixon-zx7-mk-ii.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034229-01_pc',
     productUrl: 'https://www.srixon.com/zx-mk-ii-7-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -1660,7 +1660,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1200,
     currency: 'USD',
-    imageUrl: '/images/irons/srixon-zx5-mk-ii.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034228-01_pc',
     productUrl: 'https://www.srixon.com/zx-mk-ii-5-irons/',
     playerType: ['low', 'mid'],
     description:
@@ -1728,7 +1728,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/srixon-zx4-mk-ii.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034224-01_pc',
     productUrl: 'https://www.srixon.com/zx-mk-ii-4-irons/',
     playerType: ['mid', 'high'],
     description:
@@ -1800,7 +1800,7 @@ export const irons: Iron[] = [
     year: 2022,
     msrp: 1400,
     currency: 'USD',
-    imageUrl: '/images/irons/mizuno-pro-221.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000024593-01_pc',
     productUrl: 'https://www.mizuno.com/pro-221-irons',
     playerType: ['low'],
     description:
@@ -1867,7 +1867,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1300,
     currency: 'USD',
-    imageUrl: '/images/irons/mizuno-pro-245.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041032-01_pc',
     productUrl: 'https://www.mizuno.com/pro-245-irons',
     playerType: ['low', 'mid'],
     description:
@@ -1934,7 +1934,7 @@ export const irons: Iron[] = [
     year: 2022,
     msrp: 1300,
     currency: 'USD',
-    imageUrl: '/images/irons/mizuno-pro-225.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000024595-01_pc',
     productUrl: 'https://www.mizuno.com/pro-225-irons',
     playerType: ['low', 'mid'],
     description:
@@ -2001,7 +2001,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/mizuno-jpx925-hot-metal.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000046545-01_pc',
     productUrl: 'https://www.mizuno.com/jpx925-hot-metal-irons',
     playerType: ['mid', 'high'],
     description:
@@ -2069,7 +2069,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1000,
     currency: 'USD',
-    imageUrl: '/images/irons/mizuno-jpx925-hot-metal-hl.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000047186-01_pc',
     productUrl: 'https://www.mizuno.com/jpx925-hot-metal-hl-irons',
     playerType: ['high', 'beginner'],
     description:
@@ -2141,7 +2141,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 2450,
     currency: 'USD',
-    imageUrl: '/images/irons/pxg-0311-gen6-t.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-T-Iron-Beauty.jpg',
     productUrl: 'https://www.pxg.com/irons/0311-gen6-t',
     playerType: ['low', 'mid'],
     description:
@@ -2209,7 +2209,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 2450,
     currency: 'USD',
-    imageUrl: '/images/irons/pxg-0311-gen6-xp.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-XP-Iron-Beauty.jpg',
     productUrl: 'https://www.pxg.com/irons/0311-gen6-xp',
     playerType: ['mid', 'high'],
     description:
@@ -2281,7 +2281,7 @@ export const irons: Iron[] = [
     year: 2021,
     msrp: 800,
     currency: 'USD',
-    imageUrl: '/images/irons/wilson-d9.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000017999-01_pc',
     productUrl: 'https://www.wilson.com/d9-irons',
     playerType: ['mid', 'high'],
     description:
@@ -2349,7 +2349,7 @@ export const irons: Iron[] = [
     year: 2023,
     msrp: 1300,
     currency: 'USD',
-    imageUrl: '/images/irons/wilson-staff-model-blade.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000006593-01_pc',
     productUrl: 'https://www.wilson.com/staff-model-blade-irons',
     playerType: ['low'],
     description:

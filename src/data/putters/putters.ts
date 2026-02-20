@@ -12,7 +12,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 429,
     currency: 'USD',
-    imageUrl: '/images/putters/scotty-cameron-super-select-newport-2.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034804-01_pc',
     productUrl: 'https://www.scottycameron.com/putters/super-select/newport-2/',
     playerType: ['low', 'mid'],
     description:
@@ -65,7 +65,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 429,
     currency: 'USD',
-    imageUrl: '/images/putters/scotty-cameron-super-select-newport-2-plus.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034808-01_pc',
     productUrl: 'https://www.scottycameron.com/putters/super-select/newport-2-plus/',
     playerType: ['low', 'mid'],
     description:
@@ -118,7 +118,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 449,
     currency: 'USD',
-    imageUrl: '/images/putters/scotty-cameron-phantom-x-5.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000026095-01_pc',
     productUrl: 'https://www.scottycameron.com/putters/phantom-x/phantom-x-5/',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -171,7 +171,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 449,
     currency: 'USD',
-    imageUrl: '/images/putters/scotty-cameron-phantom-x-9.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000026131-01_pc',
     productUrl: 'https://www.scottycameron.com/putters/phantom-x/phantom-x-9/',
     playerType: ['mid', 'high'],
     description:
@@ -224,7 +224,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 449,
     currency: 'USD',
-    imageUrl: '/images/putters/scotty-cameron-special-select-squareback-2.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000010635-01_pc',
     productUrl: 'https://www.scottycameron.com/putters/special-select/squareback-2/',
     playerType: ['low', 'mid'],
     description:
@@ -281,7 +281,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/putters/odyssey-ai-one-cruiser-double-wide.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041998-01_pc',
     productUrl: 'https://www.odysseygolf.com/putters/ai-one-cruiser-double-wide/',
     playerType: ['mid', 'high'],
     description:
@@ -335,7 +335,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/putters/odyssey-ai-one-7.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000039991-01_pc',
     productUrl: 'https://www.odysseygolf.com/putters/ai-one-7/',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -388,7 +388,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 379,
     currency: 'USD',
-    imageUrl: '/images/putters/odyssey-tri-hot-5k-double-wide.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034685-01_pc',
     productUrl: 'https://www.odysseygolf.com/putters/tri-hot-5k-double-wide/',
     playerType: ['low', 'mid'],
     description:
@@ -441,7 +441,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/putters/odyssey-white-hot-versa-1.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034516-01_pc',
     productUrl: 'https://www.odysseygolf.com/putters/white-hot-versa-1/',
     playerType: ['low', 'mid'],
     description:
@@ -494,7 +494,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/putters/odyssey-white-hot-versa-seven.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034517-01_pc',
     productUrl: 'https://www.odysseygolf.com/putters/white-hot-versa-seven/',
     playerType: ['mid', 'high'],
     description:
@@ -552,7 +552,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 450,
     currency: 'USD',
-    imageUrl: '/images/putters/ping-pld-anser.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041803-01_pc',
     productUrl: 'https://ping.com/en-us/shop/putters/pld-milled/anser/',
     playerType: ['low', 'mid'],
     description:
@@ -605,7 +605,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 450,
     currency: 'USD',
-    imageUrl: '/images/putters/ping-pld-milled-ds72.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041805-01_pc',
     productUrl: 'https://ping.com/en-us/shop/putters/pld-milled/ds72/',
     playerType: ['low', 'mid'],
     description:
@@ -658,7 +658,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 260,
     currency: 'USD',
-    imageUrl: '/images/putters/ping-2024-anser.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000043477-01_pc',
     productUrl: 'https://ping.com/en-us/shop/putters/2024/anser/',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -712,7 +712,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 260,
     currency: 'USD',
-    imageUrl: '/images/putters/ping-2024-tyne-g.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000031349-01_pc',
     productUrl: 'https://ping.com/en-us/shop/putters/2024/tyne-g/',
     playerType: ['mid', 'high'],
     description:
@@ -765,7 +765,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 260,
     currency: 'USD',
-    imageUrl: '/images/putters/ping-2024-fetch.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000043480-01_pc',
     productUrl: 'https://ping.com/en-us/shop/putters/2024/fetch/',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -822,7 +822,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 379,
     currency: 'USD',
-    imageUrl: '/images/putters/taylormade-spider-tour-x.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000039087-01_pc',
     productUrl: 'https://www.taylormadegolf.com/putters/spider-tour-x/',
     playerType: ['low', 'mid'],
     description:
@@ -875,7 +875,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/putters/taylormade-spider-gtx.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034354-01_pc',
     productUrl: 'https://www.taylormadegolf.com/putters/spider-gtx/',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -929,7 +929,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/putters/taylormade-tp-juno.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000042234-01_pc',
     productUrl: 'https://www.taylormadegolf.com/putters/tp-juno/',
     playerType: ['low', 'mid'],
     description:
@@ -986,7 +986,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 200,
     currency: 'USD',
-    imageUrl: '/images/putters/cleveland-frontline-elevado.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000019223-01_pc',
     productUrl: 'https://www.clevelandgolf.com/putters/frontline-elevado/',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -1040,7 +1040,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 250,
     currency: 'USD',
-    imageUrl: '/images/putters/cleveland-hb-soft-milled-1.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033470-01_pc',
     productUrl: 'https://www.clevelandgolf.com/putters/hb-soft-milled-1/',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -1097,7 +1097,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 400,
     currency: 'USD',
-    imageUrl: '/images/putters/bettinardi-ss28.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000018046-01_pc',
     productUrl: 'https://www.bettinardi.com/putters/studio-stock/ss28/',
     playerType: ['low', 'mid'],
     description:
@@ -1151,7 +1151,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 450,
     currency: 'USD',
-    imageUrl: '/images/putters/bettinardi-inovai-8-0.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000025630-01_pc',
     productUrl: 'https://www.bettinardi.com/putters/inovai/inovai-8-0/',
     playerType: ['mid', 'high'],
     description:
@@ -1208,7 +1208,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 379,
     currency: 'USD',
-    imageUrl: '/images/putters/evnroll-er2v2-midblade.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000027162-01_pc',
     productUrl: 'https://www.evnroll.com/putters/er2v2-midblade/',
     playerType: ['low', 'mid'],
     description:
@@ -1261,7 +1261,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 379,
     currency: 'USD',
-    imageUrl: '/images/putters/evnroll-er5v2-hatchback.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000027167-01_pc',
     productUrl: 'https://www.evnroll.com/putters/er5v2-hatchback/',
     playerType: ['mid', 'high'],
     description:
@@ -1318,7 +1318,7 @@ export const putters: Putter[] = [
     year: 2024,
     msrp: 350,
     currency: 'USD',
-    imageUrl: '/images/putters/mizuno-m-craft-omoi-type-v.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000038664-01_pc',
     productUrl: 'https://www.mizunogolf.com/putters/m-craft-omoi-type-v/',
     playerType: ['mid', 'high'],
     description:

@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Putters', to: '/putters' },
   { label: 'Hybrids', to: '/hybrids' },
   { label: 'Fairways', to: '/fairway-woods' },
-  { label: 'Rankings', to: '/' },
+  { label: 'Rankings', to: '/drivers' },
   { label: 'About', to: '/about' },
 ]
 

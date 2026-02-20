@@ -12,7 +12,7 @@ export const hybrids: Hybrid[] = [
     year: 2025,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/taylormade-qi35-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000049399-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi35-rescue/qi35-rescue.html',
     playerType: ['low', 'mid'],
     description:
@@ -65,7 +65,7 @@ export const hybrids: Hybrid[] = [
     year: 2025,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/taylormade-qi35-max-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000049406-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi35-max-rescue/qi35-max-rescue.html',
     playerType: ['mid', 'high'],
     description:
@@ -120,7 +120,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/hybrids/taylormade-stealth-2-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033757-01_pc',
     productUrl: 'https://www.taylormadegolf.com/stealth-2-rescue/stealth-2-rescue.html',
     playerType: ['low', 'mid'],
     description:
@@ -172,7 +172,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/callaway-paradym-ai-smoke-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040789-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/hybrids/paradym-ai-smoke-hybrid.html',
     playerType: ['low', 'mid'],
     description:
@@ -225,7 +225,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/callaway-ai-smoke-max-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040790-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/hybrids/ai-smoke-max-hybrid.html',
     playerType: ['mid', 'high'],
     description:
@@ -280,7 +280,7 @@ export const hybrids: Hybrid[] = [
     year: 2025,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/titleist-gt-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050734-01_pc',
     productUrl: 'https://www.titleist.com/golf-clubs/hybrids/gt-hybrid',
     playerType: ['low', 'mid'],
     description:
@@ -334,7 +334,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 269,
     currency: 'USD',
-    imageUrl: '/images/hybrids/ping-g430-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000032563-01_pc',
     productUrl: 'https://ping.com/en-us/shop/hybrids/g430',
     playerType: ['low', 'mid'],
     description:
@@ -387,7 +387,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 269,
     currency: 'USD',
-    imageUrl: '/images/hybrids/ping-g430-max-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033891-01_pc',
     productUrl: 'https://ping.com/en-us/shop/hybrids/g430-max',
     playerType: ['mid', 'high'],
     description:
@@ -442,7 +442,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/hybrids/cobra-darkspeed-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040748-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-hybrid',
     playerType: ['low', 'mid'],
     description:
@@ -495,7 +495,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/hybrids/cobra-air-x-2-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000039411-01_pc',
     productUrl: 'https://www.cobragolf.com/air-x-2-hybrid',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -550,7 +550,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 229,
     currency: 'USD',
-    imageUrl: '/images/hybrids/srixon-zx-mk-ii-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033975-01_pc',
     productUrl: 'https://www.srixon.com/us/golf-clubs/hybrids/zx-mk-ii-hybrid/',
     playerType: ['low', 'mid'],
     description:
@@ -603,7 +603,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/hybrids/mizuno-st-max-230-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000042182-01_pc',
     productUrl: 'https://www.mizunogolf.com/golf-clubs/hybrids/st-max-230-hybrid/',
     playerType: ['mid', 'high'],
     description:
@@ -656,7 +656,7 @@ export const hybrids: Hybrid[] = [
     year: 2022,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/hybrids/cleveland-launcher-xl-halo-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000022412-01_pc',
     productUrl: 'https://www.clevelandgolf.com/golf-clubs/hybrids/launcher-xl-halo-hybrid/',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -711,7 +711,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/hybrids/pxg-0311-gen6-hybrid.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-Hybrid-Beauty.jpg',
     productUrl: 'https://www.pxg.com/en-us/golf-clubs/hybrids/0311-gen6-hybrid',
     playerType: ['low', 'mid'],
     description:
@@ -765,7 +765,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/hybrids/tour-edge-hot-launch-e524-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000043569-01_pc',
     productUrl: 'https://www.touredge.com/golf-clubs/hybrids/hot-launch-e524-hybrid',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -820,7 +820,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/taylormade-qi4d-rescue-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040764-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi4d-rescue/qi4d-rescue.html',
     playerType: ['low', 'mid'],
     description:
@@ -873,7 +873,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/taylormade-qi4d-max-rescue-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040765-01_pc',
     productUrl: 'https://www.taylormadegolf.com/qi4d-max-rescue/qi4d-max-rescue.html',
     playerType: ['mid', 'high'],
     description:
@@ -928,7 +928,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/callaway-elyte-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050404-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/hybrids/hybrids-2025-elyte.html',
     playerType: ['low', 'mid'],
     description:
@@ -984,7 +984,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 349,
     currency: 'USD',
-    imageUrl: '/images/hybrids/callaway-quantum-max-os-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058220-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/hybrids/hybrids-2026-quantum-max-os.html',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -1039,7 +1039,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/callaway-apex-uw-2026.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000055264-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/woods/fwoods-2026-apex-utility.html',
     playerType: ['low', 'mid'],
     description:
@@ -1092,7 +1092,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 325,
     currency: 'USD',
-    imageUrl: '/images/hybrids/ping-g440-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000047710-01_pc',
     productUrl: 'https://ping.com/en-us/clubs/hybrids/g440',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -1150,7 +1150,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/hybrids/titleist-tsr2-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034530-01_pc',
     productUrl: 'https://www.titleist.com/golf-clubs/hybrids/tsr2',
     playerType: ['low', 'mid'],
     description:
@@ -1206,7 +1206,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 329,
     currency: 'USD',
-    imageUrl: '/images/hybrids/cobra-optm-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000048100-01_pc',
     productUrl: 'https://www.cobragolf.com/optm-hybrid',
     playerType: ['low', 'mid'],
     description:
@@ -1260,7 +1260,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 249,
     currency: 'USD',
-    imageUrl: '/images/hybrids/mizuno-st-max-230-hybrid-2026.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000053016-01_pc',
     productUrl: 'https://mizunogolf.com/us/golf-clubs/st-series/st-max-hybrid/',
     playerType: ['mid', 'high'],
     description:
@@ -1313,7 +1313,7 @@ export const hybrids: Hybrid[] = [
     year: 2023,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/hybrids/srixon-zx-mk-ii-hybrid-2026.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033975-01_pc',
     productUrl: 'https://us.dunlopsports.com/srixon/clubs/hybrids/zx-mk-ii-hybrids/zx-mkii-hybrid/ZXMKIIHYB.html',
     playerType: ['low', 'mid'],
     description:
@@ -1366,7 +1366,7 @@ export const hybrids: Hybrid[] = [
     year: 2025,
     msrp: 199,
     currency: 'USD',
-    imageUrl: '/images/hybrids/cleveland-halo-xl-2-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041024-01_pc',
     productUrl: 'https://us.dunlopsports.com/cleveland-golf/clubs/hybrids-and-hy-woods/halo-xl-hybrids/halo-xl-hybrids/MLHXLH.html',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -1420,7 +1420,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 329,
     currency: 'USD',
-    imageUrl: '/images/hybrids/pxg-lightning-hybrid.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-Hybrid-Beauty.jpg',
     productUrl: 'https://www.pxg.com/products/lightning-hybrids',
     playerType: ['low', 'mid', 'high'],
     description:
@@ -1476,7 +1476,7 @@ export const hybrids: Hybrid[] = [
     year: 2026,
     msrp: 229,
     currency: 'USD',
-    imageUrl: '/images/hybrids/tour-edge-exotics-max-hybrid-2026.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000027404-01_pc',
     productUrl: 'https://www.touredge.com/products/exotics-max-hybrid',
     playerType: ['mid', 'high'],
     description:
@@ -1532,7 +1532,7 @@ export const hybrids: Hybrid[] = [
     year: 2024,
     msrp: 199,
     currency: 'USD',
-    imageUrl: '/images/hybrids/wilson-launch-pad-2-hybrid.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000026969-01_pc',
     productUrl: 'https://www.wilson.com/en-us/golf/clubs/hybrids/launch-pad-2-hybrid',
     playerType: ['high', 'beginner'],
     description:

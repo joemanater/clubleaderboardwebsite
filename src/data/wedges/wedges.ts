@@ -10,7 +10,7 @@ export const wedges: Wedge[] = [
     year: 2026,
     msrp: 199,
     currency: 'USD',
-    imageUrl: '/images/wedges/vokey-sm11.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000058242-01_pc',
     productUrl: 'https://www.titleist.com/product/vokey-sm11/MASTER-SM11.html',
     playerType: ['low', 'mid'],
     description:
@@ -70,7 +70,7 @@ export const wedges: Wedge[] = [
     year: 2026,
     msrp: 199,
     currency: 'USD',
-    imageUrl: '/images/wedges/taylormade-mg5.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000051585-01_pc',
     productUrl: 'https://www.taylormadegolf.com/MG5-Wedge/DW-TC647.html',
     playerType: ['low', 'mid'],
     description:
@@ -130,7 +130,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/wedges/callaway-cb12.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000053316-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/wedges/wedges-2025-cb12.html',
     playerType: ['mid', 'high'],
     description:
@@ -185,7 +185,7 @@ export const wedges: Wedge[] = [
     year: 2026,
     msrp: 217,
     currency: 'USD',
-    imageUrl: '/images/wedges/ping-s259.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041799-01_pc',
     productUrl: 'https://ping.com/en-us/clubs/wedges/s259',
     playerType: ['low', 'mid'],
     description:
@@ -246,7 +246,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/wedges/mizuno-pro-t1.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050592-01_pc',
     productUrl: 'https://mizunogolf.com/us/golf-clubs/mp-series/mizuno-pro-t1/',
     playerType: ['low', 'mid'],
     description:
@@ -306,7 +306,7 @@ export const wedges: Wedge[] = [
     year: 2024,
     msrp: 139,
     currency: 'USD',
-    imageUrl: '/images/wedges/cleveland-rtx-6-zipcore.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000033892-01_pc',
     productUrl: 'https://us.dunlopsports.com/cleveland-golf/clubs/wedges/rtx-6-zipcore/',
     playerType: ['low', 'mid'],
     description:
@@ -364,7 +364,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 170,
     currency: 'USD',
-    imageUrl: '/images/wedges/cobra-king-wedge.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000035550-01_pc',
     productUrl: 'https://www.cobragolf.com/products/king-wedge-2025',
     playerType: ['low', 'mid'],
     description:
@@ -422,7 +422,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 299,
     currency: 'USD',
-    imageUrl: '/images/wedges/pxg-sugar-daddy-iii.png',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/Sugar-Daddy-III-Wedge-Beauty.jpg',
     productUrl: 'https://www.pxg.com/products/sugar-daddy-iii-wedges',
     playerType: ['low', 'mid'],
     description:
@@ -479,7 +479,7 @@ export const wedges: Wedge[] = [
     year: 2026,
     msrp: 275,
     currency: 'USD',
-    imageUrl: '/images/wedges/vokey-wedgeworks.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041794-01_pc',
     productUrl: 'https://www.vokey.com/nav/wedgeworks.aspx',
     playerType: ['low'],
     description:
@@ -540,7 +540,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 229,
     currency: 'USD',
-    imageUrl: '/images/wedges/callaway-opus-platinum.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000030770-01_pc',
     productUrl: 'https://www.callawaygolf.com/golf-clubs/wedges/wedges-2024-opus-platinum-chrome.html',
     playerType: ['low'],
     description:
@@ -596,7 +596,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 200,
     currency: 'USD',
-    imageUrl: '/images/wedges/wilson-staff-model-zm.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000043519-01_pc',
     productUrl: 'https://www.wilson.com/en-us/product/staff-model-wedge-zm-wg1p0345',
     playerType: ['low', 'mid'],
     description:
@@ -653,7 +653,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 179,
     currency: 'USD',
-    imageUrl: '/images/wedges/mizuno-pro-t3.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000050593-01_pc',
     productUrl: 'https://mizunogolf.com/us/golf-clubs/mp-series/mizuno-pro-t3/',
     playerType: ['mid', 'high'],
     description:
@@ -710,7 +710,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 185,
     currency: 'USD',
-    imageUrl: '/images/wedges/srixon-zx7-mkii.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034229-01_pc',
     productUrl: 'https://us.dunlopsports.com/srixon/clubs/irons/zx7-mk-ii/',
     playerType: ['low'],
     description:
@@ -765,7 +765,7 @@ export const wedges: Wedge[] = [
     year: 2024,
     msrp: 59,
     currency: 'USD',
-    imageUrl: '/images/wedges/tour-edge-tgs.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000023957-01_pc',
     productUrl: 'https://www.touredge.com/products/tour-edge-tgs-triple-grind-sole-wedge',
     playerType: ['mid', 'high', 'beginner'],
     description:
@@ -820,7 +820,7 @@ export const wedges: Wedge[] = [
     year: 2024,
     msrp: 170,
     currency: 'USD',
-    imageUrl: '/images/wedges/cleveland-cbx4-zipcore.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041612-01_pc',
     productUrl: 'https://us.dunlopsports.com/cleveland-golf/clubs/wedges/cbx-price-drop/cbx-4-zipcore-wedge/MCBX4ZC.html',
     playerType: ['mid', 'high'],
     description:
