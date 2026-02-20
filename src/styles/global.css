@@ -7,6 +7,7 @@
   --color-primary: #171717;
   --color-primary-foreground: #fff;
   --color-border: #cfcfcf;
+  --color-muted-foreground: #737373;
 }
 
 /* Reset — in @layer base so Tailwind utilities can override */

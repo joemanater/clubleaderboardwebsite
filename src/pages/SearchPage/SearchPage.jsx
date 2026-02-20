@@ -1,4 +1,5 @@
-import { useSearchParams, Link } from 'react-router-dom'
+import { useState } from 'react'
+import { useSearchParams, useNavigate } from 'react-router-dom'
 import { CATEGORY_LIST } from '../../data/categoryConfig'
 import { manufacturers } from '../../data/shared/manufacturers'
 import usePageTitle from '../../hooks/usePageTitle'
@@ -32,9 +33,19 @@ function searchAllClubs(query) {
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
   const query = searchParams.get('q') || ''
+  const [input, setInput] = useState(query)
   const results = searchAllClubs(query)
   usePageTitle(query ? `Search: ${query}` : 'Search Golf Clubs')
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    const trimmed = input.trim()
+    if (trimmed) {
+      navigate(`/search?q=${encodeURIComponent(trimmed)}`)
+    }
+  }
 
   return (
     <div className="search-page">
@@ -55,6 +66,18 @@ export default function SearchPage() {
       </div>
 
       <div className="container">
+        <form className="search-page__form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="search-page__input"
+            placeholder="Search by brand or model name…"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            autoFocus
+          />
+          <button type="submit" className="search-page__btn">Search</button>
+        </form>
+
         {!query && (
           <p className="search-page__empty">
             Enter a brand or model name to search across all categories.
