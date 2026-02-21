@@ -18,6 +18,7 @@ export interface BaseGolfClub {
   category: ClubCategory;
   year: number;
   msrp: number;
+  streetPrice?: number;
   currency: 'USD';
   imageUrl: string;
   productUrl: string;

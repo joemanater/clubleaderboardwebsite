@@ -104,6 +104,24 @@
   color: var(--black);
 }
 
+.club-card__price-street {
+  color: var(--green, #16a34a);
+}
+
+.club-card__price-msrp {
+  font-size: var(--caption-font-size);
+  font-weight: normal;
+  color: var(--grey-400);
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+.club-card__price-note {
+  font-size: var(--caption-font-size);
+  font-weight: normal;
+  color: var(--grey-400);
+}
+
 .club-card__tags {
   display: flex;
   gap: 4px;

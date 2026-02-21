@@ -53,6 +53,12 @@ export default function CategoryPage() {
       </div>
 
       <div className="container">
+        <p className="category-page__note">
+          Rankings include all currently available models regardless of release year.
+          Model years shown reflect the manufacturer's original launch date.
+          Prices shown are manufacturer's suggested retail (MSRP) — street prices for
+          previous-generation models may be lower.
+        </p>
         <div className="category-page__toolbar">
           <span className="category-page__count">{category.data.length} clubs</span>
           <select

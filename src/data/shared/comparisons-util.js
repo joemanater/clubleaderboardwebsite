@@ -109,28 +109,68 @@ export function generateIntro(a, b) {
 }
 
 /**
+ * Get a spec-based contextual fact for a given score field
+ */
+function getSpecFact(driver, field) {
+  const specs = driver.specifications || {}
+  switch (field) {
+    case 'forgiveness':
+      if (specs.moi) return `${driver.name}'s ${specs.moi.toLocaleString()} MOI ${specs.moi >= 9500 ? 'is among the highest available' : specs.moi <= 8500 ? 'reflects its workability-first design' : 'provides solid stability'}.`
+      return ''
+    case 'distance':
+      if (specs.keyTechnologies?.length) return `Key tech like ${specs.keyTechnologies[0]} drives the ${driver.name}'s speed numbers.`
+      return ''
+    case 'feelAndSound':
+      if (specs.headSize) return `The ${driver.name}'s ${specs.headSize}cc head ${specs.headSize <= 445 ? 'delivers a compact, tour-preferred feel' : 'produces a confident, full-bodied sound'}.`
+      return ''
+    case 'adjustability':
+      if (specs.adjustabilityFeatures?.length) return `The ${driver.name} offers ${specs.adjustabilityFeatures[0]} for fine-tuning.`
+      return ''
+    case 'value':
+      return `At $${driver.msrp}, the ${driver.name} ${driver.msrp <= 449 ? 'undercuts most competitors significantly' : driver.msrp >= 650 ? 'sits at the premium end of the market' : 'is priced in line with flagship competitors'}.`
+    default:
+      return ''
+  }
+}
+
+/**
  * Generate score category breakdown text
  */
 export function generateCategoryBreakdown(a, b, field, label) {
   const scoreA = a.scores[field]
   const scoreB = b.scores[field]
-  const diff = Math.abs(scoreA - scoreB).toFixed(1)
+  const diff = Math.abs(scoreA - scoreB)
+  const diffStr = diff.toFixed(1)
   const winner = scoreA > scoreB ? a : scoreB > scoreA ? b : null
   const loser = scoreA > scoreB ? b : scoreB > scoreA ? a : null
+  const winScore = Math.max(scoreA, scoreB)
+  const loseScore = Math.min(scoreA, scoreB)
+
+  // Add a unique spec-based fact for the winner (or first driver if tied)
+  const specFact = winner ? getSpecFact(winner, field) : getSpecFact(a, field)
+  const factSuffix = specFact ? ` ${specFact}` : ''
 
   if (!winner) {
-    return `Both the ${a.name} and ${b.name} score ${scoreA}/10 for ${label.toLowerCase()}. This is a dead heat — neither has a meaningful edge in this category.`
+    return `Both the ${a.name} and ${b.name} score ${scoreA}/10 for ${label.toLowerCase()} — a dead heat. Neither has a meaningful edge here, so this category won't be the deciding factor.${factSuffix}`
   }
 
-  if (parseFloat(diff) <= 0.3) {
-    return `The ${winner.name} edges out the ${loser.name} by just ${diff} points in ${label.toLowerCase()} (${scoreA > scoreB ? scoreA : scoreB} vs ${scoreA > scoreB ? scoreB : scoreA}). In practice, you'd be hard-pressed to notice a difference. Both perform well here.`
+  if (diff <= 0.3) {
+    return `The ${winner.name} edges the ${loser.name} ${winScore} to ${loseScore} in ${label.toLowerCase()}, but the ${diffStr}-point gap is virtually identical in practice. You won't feel a real-world difference between these two here.${factSuffix}`
   }
 
-  if (parseFloat(diff) >= 1.5) {
-    return `This is where they diverge significantly. The ${winner.name} scores ${scoreA > scoreB ? scoreA : scoreB}/10 for ${label.toLowerCase()} compared to just ${scoreA > scoreB ? scoreB : scoreA}/10 for the ${loser.name} — a ${diff}-point gap. If ${label.toLowerCase()} is a priority for your game, the ${winner.name} is the clear pick.`
+  if (diff <= 0.5) {
+    return `A negligible difference in ${label.toLowerCase()}: the ${winner.name} scores ${winScore}/10 vs ${loseScore}/10 for the ${loser.name}. The ${diffStr}-point gap is slim enough that other factors should guide your decision.${factSuffix}`
   }
 
-  return `The ${winner.name} wins on ${label.toLowerCase()} with ${scoreA > scoreB ? scoreA : scoreB}/10 vs ${scoreA > scoreB ? scoreB : scoreA}/10 for the ${loser.name}. A ${diff}-point advantage that's noticeable but not dramatic.`
+  if (diff <= 1.0) {
+    return `The ${winner.name} holds a modest edge in ${label.toLowerCase()} at ${winScore}/10 vs the ${loser.name}'s ${loseScore}/10. A ${diffStr}-point advantage that's slight but could matter if ${label.toLowerCase()} ranks high on your priority list.${factSuffix}`
+  }
+
+  if (diff <= 2.0) {
+    return `A clear advantage for the ${winner.name} in ${label.toLowerCase()}: ${winScore}/10 vs ${loseScore}/10 for the ${loser.name}. The ${diffStr}-point gap represents a meaningful difference you'll likely notice on the course.${factSuffix}`
+  }
+
+  return `A major gap in ${label.toLowerCase()} separates these two. The ${winner.name} dominates at ${winScore}/10 while the ${loser.name} manages just ${loseScore}/10 — a ${diffStr}-point chasm. If ${label.toLowerCase()} matters to your game, this is a deciding factor.${factSuffix}`
 }
 
 /**

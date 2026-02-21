@@ -43,7 +43,17 @@ export default function ClubCard({ club, category, rank }) {
           ))}
         </div>
         <div className="club-card__footer">
-          <span className="club-card__price">${club.msrp}</span>
+          <span className="club-card__price">
+            {club.streetPrice ? (
+              <>
+                <span className="club-card__price-street">${club.streetPrice}</span>
+                <span className="club-card__price-msrp">${club.msrp}</span>
+              </>
+            ) : (
+              `$${club.msrp}`
+            )}
+            {category.slug === 'irons' && <span className="club-card__price-note"> / set</span>}
+          </span>
           <div className="club-card__tags">
             {club.playerType.map((type) => (
               <span key={type} className="club-card__tag">{PLAYER_LABELS[type] || type}</span>

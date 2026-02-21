@@ -79,7 +79,17 @@ export default function ProductPage() {
               <span className="product-page__score-num">{product.overallScore}</span>
               <span className="product-page__score-label">{scoreLabel}</span>
             </div>
-            <p className="product-page__price">${product.msrp}</p>
+            <p className="product-page__price">
+              {product.streetPrice ? (
+                <>
+                  <span className="product-page__price-street">${product.streetPrice}</span>
+                  <span className="product-page__price-msrp">${product.msrp} MSRP</span>
+                </>
+              ) : (
+                `$${product.msrp}`
+              )}
+              {categorySlug === 'irons' && <span className="product-page__price-note"> / set</span>}
+            </p>
             <div className="product-page__tags">
               {product.playerType.map((type) => (
                 <span key={type} className="product-page__tag">{PLAYER_LABELS[type] || type}</span>

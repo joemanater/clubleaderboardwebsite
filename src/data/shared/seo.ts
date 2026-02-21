@@ -103,38 +103,40 @@ export function generateSitemap(
   tags: string[] = [],
   bestOfPages: { slug: string }[] = []
 ): string {
-  const urls: string[] = [
-    `  <url><loc>${SITE_URL}</loc><priority>1.0</priority></url>`,
-  ];
+  const today = new Date().toISOString().split('T')[0];
+  const u = (loc: string, priority: string, lastmod: string = today) =>
+    `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><priority>${priority}</priority></url>`;
+
+  const urls: string[] = [u(SITE_URL, '1.0')];
 
   // Static pages
   const staticPages = ['/search', '/compare', '/about', '/privacy'];
   for (const page of staticPages) {
-    urls.push(`  <url><loc>${SITE_URL}${page}</loc><priority>0.5</priority></url>`);
+    urls.push(u(`${SITE_URL}${page}`, '0.5'));
   }
 
   // Category pages
   for (const category of categories) {
-    urls.push(`  <url><loc>${SITE_URL}/${category}</loc><priority>0.9</priority></url>`);
+    urls.push(u(`${SITE_URL}/${category}`, '0.9'));
   }
 
   // Tag pages
   for (const tag of tags) {
-    urls.push(`  <url><loc>${SITE_URL}/t/${tag}</loc><priority>0.7</priority></url>`);
+    urls.push(u(`${SITE_URL}/t/${tag}`, '0.7'));
   }
 
   // Product pages
   for (const club of allClubs) {
-    urls.push(`  <url><loc>${SITE_URL}/${club.categorySlug}/${club.id}</loc><priority>0.8</priority></url>`);
+    urls.push(u(`${SITE_URL}/${club.categorySlug}/${club.id}`, '0.8'));
   }
 
   for (const comp of comparisons) {
-    urls.push(`  <url><loc>${SITE_URL}/compare/${comp.slug}</loc><priority>0.7</priority></url>`);
+    urls.push(u(`${SITE_URL}/compare/${comp.slug}`, '0.7'));
   }
 
   // Best-of pages
   for (const page of bestOfPages) {
-    urls.push(`  <url><loc>${SITE_URL}/best/${page.slug}</loc><priority>0.8</priority></url>`);
+    urls.push(u(`${SITE_URL}/best/${page.slug}`, '0.8'));
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>

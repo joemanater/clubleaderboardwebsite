@@ -594,7 +594,7 @@ export const wedges: Wedge[] = [
     manufacturer: 'wilson',
     category: 'wedge',
     year: 2025,
-    msrp: 200,
+    msrp: 150,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000043519-01_pc',
     productUrl: 'https://www.wilson.com/en-us/product/staff-model-wedge-zm-wg1p0345',
@@ -605,7 +605,7 @@ export const wedges: Wedge[] = [
       'Forged 8620 carbon steel delivers soft, tour-quality feel',
       'ZM grooves with garnet face blasting maximize wet-condition spin',
       'Dynamic Gold Spinner shaft enhances spin rates on short shots',
-      'Competitive $200 price for a tour-caliber forged wedge',
+      'Outstanding $150 price for a tour-caliber forged wedge',
     ],
     cons: [
       'Wilson brand perception in wedges lags behind Vokey, Cleveland, and Callaway',

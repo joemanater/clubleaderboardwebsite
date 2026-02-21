@@ -412,7 +412,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'cobra',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 299,
+    msrp: 329,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040745-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-fairway',
@@ -423,7 +423,7 @@ export const fairwayWoods: FairwayWood[] = [
       'Excellent ball speed from the H.O.T. face',
       'Low spin, penetrating flight for better players',
       'PWR-BRIDGE allows precise CG positioning',
-      'Outstanding value at a lower price point',
+      'Competitive pricing relative to performance',
     ],
     cons: [
       'Less forgiving than the MAX version',
@@ -461,7 +461,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'cobra',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 299,
+    msrp: 329,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000040746-01_pc',
     productUrl: 'https://www.cobragolf.com/darkspeed-max-fairway',
@@ -472,7 +472,7 @@ export const fairwayWoods: FairwayWood[] = [
       'Maximum forgiveness with draw bias',
       'Easy to launch even with moderate swing speeds',
       'H.O.T. face delivers strong ball speed on mis-hits',
-      'Excellent value compared to premium competitors',
+      'Good value for the forgiveness offered',
       'Baffler rails improve turf interaction',
     ],
     cons: [
@@ -524,7 +524,7 @@ export const fairwayWoods: FairwayWood[] = [
       'Rebound frame generates impressive ball speed',
       'Classic, compact shape appeals to better players',
       'Surprisingly forgiving for its size',
-      'Outstanding value at $279',
+      'Outstanding value at its price point',
       'Clean, traditional aesthetics',
     ],
     cons: [
@@ -663,7 +663,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'pxg',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 279,
+    msrp: 299,
     currency: 'USD',
     imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-Fairway-Beauty.jpg',
     productUrl: 'https://www.pxg.com/en-us/clubs/fairway-woods/0311-gen6',
@@ -715,7 +715,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'wilson',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 249,
+    msrp: 280,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000034386-01_pc',
     productUrl: 'https://www.wilson.com/en-us/golf/fairway-woods/dynapower-fairway-wood',
@@ -767,7 +767,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'tour-edge',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 249,
+    msrp: 300,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000048467-01_pc',
     productUrl: 'https://www.touredge.com/clubs/fairway-woods/exotics-c725',
@@ -775,11 +775,11 @@ export const fairwayWoods: FairwayWood[] = [
     description:
       'The Tour Edge Exotics C725 fairway wood combines a titanium face with a ridgeback sole design for impressive ball speed and versatility at a fraction of the price of premium competitors. Tour Edge\'s diamond face technology uses variable thickness mapping for consistent performance across the hitting area. It is one of the best-kept secrets in the fairway wood market.',
     pros: [
-      'Titanium face at a budget-friendly price',
+      'Titanium face at a competitive $300 price',
       'Ridgeback sole enhances turf interaction',
       'Diamond face VFT for consistent ball speed',
       'Excellent forgiveness for a mid-range offering',
-      'Exceptional value proposition',
+      'Strong value for the technology offered',
     ],
     cons: [
       'Less brand prestige than major manufacturers',
@@ -806,10 +806,10 @@ export const fairwayWoods: FairwayWood[] = [
       distance: 8.3,
       versatility: 8.2,
       feelAndSound: 7.8,
-      value: 9.5,
+      value: 8.8,
     },
-    // 8.5*0.25 + 8.3*0.25 + 8.2*0.20 + 7.8*0.15 + 9.5*0.15 = 2.125+2.075+1.64+1.17+1.425 = 8.435 → 8.4
-    overallScore: 8.4,
+    // 8.5*0.25 + 8.3*0.25 + 8.2*0.20 + 7.8*0.15 + 8.8*0.15 = 2.125+2.075+1.64+1.17+1.32 = 8.33 → 8.3
+    overallScore: 8.3,
   },
 
   // ─── XXIO ─────────────────────────────────────────────────────────────────────
@@ -819,7 +819,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'xxio',
     category: 'fairway-wood',
     year: 2024,
-    msrp: 349,
+    msrp: 400,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000041044-01_pc',
     productUrl: 'https://www.xxio.com/us/fairway-woods/xxio-13-fairway-wood',
@@ -858,10 +858,10 @@ export const fairwayWoods: FairwayWood[] = [
       distance: 8.0,
       versatility: 7.5,
       feelAndSound: 8.8,
-      value: 7.5,
+      value: 7.0,
     },
-    // 9.0*0.25 + 8.0*0.25 + 7.5*0.20 + 8.8*0.15 + 7.5*0.15 = 2.25+2.00+1.50+1.32+1.125 = 8.195 → 8.2
-    overallScore: 8.2,
+    // 9.0*0.25 + 8.0*0.25 + 7.5*0.20 + 8.8*0.15 + 7.0*0.15 = 2.25+2.00+1.50+1.32+1.05 = 8.12 → 8.1
+    overallScore: 8.1,
   },
 
   // ─── Honma ────────────────────────────────────────────────────────────────────
@@ -871,7 +871,7 @@ export const fairwayWoods: FairwayWood[] = [
     manufacturer: 'honma',
     category: 'fairway-wood',
     year: 2023,
-    msrp: 329,
+    msrp: 250,
     currency: 'USD',
     imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000019407-01_pc',
     productUrl: 'https://www.honmagolf.com/us/fairway-woods/gs-fairway-wood',
@@ -885,9 +885,8 @@ export const fairwayWoods: FairwayWood[] = [
       'Premium feel with satisfying acoustics',
     ],
     cons: [
-      'Higher price point for the features offered',
       'Limited availability and fitting locations',
-      'Not as forgiving as some competitors at this price',
+      'Not as forgiving as some competitors',
       'Fewer technology features than flagship models',
     ],
     lastUpdated: '2025-02-19',
@@ -909,10 +908,10 @@ export const fairwayWoods: FairwayWood[] = [
       distance: 8.0,
       versatility: 8.0,
       feelAndSound: 8.8,
-      value: 7.5,
+      value: 8.5,
     },
-    // 8.2*0.25 + 8.0*0.25 + 8.0*0.20 + 8.8*0.15 + 7.5*0.15 = 2.05+2.00+1.60+1.32+1.125 = 8.095 → 8.1
-    overallScore: 8.1,
+    // 8.2*0.25 + 8.0*0.25 + 8.0*0.20 + 8.8*0.15 + 8.5*0.15 = 2.05+2.00+1.60+1.32+1.275 = 8.245 → 8.2
+    overallScore: 8.2,
   },
 ];
 
