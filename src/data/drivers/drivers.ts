@@ -2879,7 +2879,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 600,
     currency: 'USD',
-    imageUrl: 'https://mizunogolf.com/wp-content/uploads/JPX-One-Driver-Hero.png',
+    imageUrl: 'https://mizunogolf.com/us/wp-content/themes/mizunotheme2015/images/jpxone/gallery/jpxone-driver-gallery-1.webp',
     productUrl: 'https://mizunogolf.com/us/golf-clubs/jpx-one-series/jpx-one-driver/',
     playerType: ['mid', 'high'],
     description:
@@ -2936,7 +2936,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 600,
     currency: 'USD',
-    imageUrl: 'https://mizunogolf.com/wp-content/uploads/JPX-One-Select-Driver-Hero.png',
+    imageUrl: 'https://cdn.media.amplience.net/i/pgatss/2000000057726-01_pc',
     productUrl: 'https://mizunogolf.com/us/golf-clubs/jpx-one-series/jpx-one-select-driver/',
     playerType: ['low', 'mid'],
     description:
@@ -2997,7 +2997,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 500,
     currency: 'USD',
-    imageUrl: 'https://www.touredge.com/cdn/shop/files/Exotics-LS-Driver-Face.png',
+    imageUrl: 'https://www.touredge.com/cdn/shop/files/LSdriver_sole_1.png?v=1755710564',
     productUrl: 'https://www.touredge.com/products/exotics-ls-driver',
     playerType: ['low'],
     description:
@@ -3053,7 +3053,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 500,
     currency: 'USD',
-    imageUrl: 'https://www.touredge.com/cdn/shop/files/Exotics-Max-Driver-Face.png',
+    imageUrl: 'https://www.touredge.com/cdn/shop/files/Maxdriver_sole_1.png?v=1755879446',
     productUrl: 'https://www.touredge.com/products/exotics-max-driver-1',
     playerType: ['mid', 'high'],
     description:
@@ -3111,7 +3111,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 500,
     currency: 'USD',
-    imageUrl: 'https://www.touredge.com/cdn/shop/files/Exotics-Lite-Driver-Face.png',
+    imageUrl: 'https://www.touredge.com/cdn/shop/files/ExoticsLiteDriver_sole.png?v=1755711854',
     productUrl: 'https://www.touredge.com/products/exotics-lite-driver',
     playerType: ['high'],
     description:
@@ -3171,7 +3171,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 650,
     currency: 'USD',
-    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777-Driver-Main.png',
+    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777_1W_Main.jpg?v=1765310385',
     productUrl: 'https://us.honmagolf.com/products/tw777-driver',
     playerType: ['low', 'mid'],
     description:
@@ -3228,7 +3228,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 650,
     currency: 'USD',
-    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777-Max-Driver-Main.png',
+    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777_MAX_1W_Main.jpg?v=1765318602',
     productUrl: 'https://us.honmagolf.com/products/tw777-max-driver',
     playerType: ['mid', 'high'],
     description:
@@ -3285,7 +3285,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 450,
     currency: 'USD',
-    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777-360Ti-Driver-Main.png',
+    imageUrl: 'https://us.honmagolf.com/cdn/shop/files/TW777_360Ti_Main.jpg?v=1765475619',
     productUrl: 'https://us.honmagolf.com/products/tw777-360-ti-driver',
     playerType: ['low'],
     description:
@@ -3347,7 +3347,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 800,
     currency: 'USD',
-    imageUrl: 'https://us.dunlopsports.com/on/demandware.static/-/Sites-xxio-us-Library/default/xxio-14-driver-hero.png',
+    imageUrl: 'https://us.dunlopsports.com/on/demandware.static/-/Sites-masterCatalog_DunlopSports/default/dwb564392e/images/large/XO25-Clubs-XXIO14-Driver-1.jpg',
     productUrl: 'https://us.dunlopsports.com/xxio/clubs/drivers/xxio-14-drivers/xxio-14-driver',
     playerType: ['mid', 'high'],
     description:
@@ -3402,7 +3402,7 @@ export const drivers: Driver[] = [
     year: 2026,
     msrp: 800,
     currency: 'USD',
-    imageUrl: 'https://us.dunlopsports.com/on/demandware.static/-/Sites-xxio-us-Library/default/xxio-14-plus-driver-hero.png',
+    imageUrl: 'https://us.dunlopsports.com/on/demandware.static/-/Sites-masterCatalog_DunlopSports/default/dw45d7d7f3/images/large/XO25-Clubs-XXIO14-Plus-Driver-1.jpg',
     productUrl: 'https://us.dunlopsports.com/xxio/clubs/drivers/xxio-14-drivers/xxio-14%2B-driver/MX14PLUSDRV.html',
     playerType: ['mid'],
     description:
