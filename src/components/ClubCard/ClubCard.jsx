@@ -47,7 +47,7 @@ export default function ClubCard({ club, category, rank }) {
             {club.streetPrice ? (
               <>
                 <span className="club-card__price-street">${club.streetPrice}</span>
-                <span className="club-card__price-msrp">${club.msrp}</span>
+                <span className="club-card__price-msrp">${club.msrp} MSRP</span>
               </>
             ) : (
               `$${club.msrp}`

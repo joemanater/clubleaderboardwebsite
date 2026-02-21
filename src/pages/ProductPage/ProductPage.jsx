@@ -83,7 +83,8 @@ export default function ProductPage() {
               {product.streetPrice ? (
                 <>
                   <span className="product-page__price-street">${product.streetPrice}</span>
-                  <span className="product-page__price-msrp">${product.msrp} MSRP</span>
+                  <span className="product-page__price-note"> at most retailers</span>
+                  <span className="product-page__price-msrp"> ${product.msrp} MSRP</span>
                 </>
               ) : (
                 `$${product.msrp}`
