@@ -48,6 +48,12 @@
   align-items: center;
   gap: 8px;
   color: var(--black);
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.nav__logo:hover {
+  opacity: 0.7;
 }
 
 .nav__logo-icon {
