@@ -422,7 +422,7 @@ export const wedges: Wedge[] = [
     year: 2025,
     msrp: 299,
     currency: 'USD',
-    imageUrl: 'https://www.pxg.com/cdn/shop/files/Sugar-Daddy-III-Wedge-Beauty.jpg',
+    imageUrl: 'https://www.pxg.com/cdn/shop/files/Sugar-Daddy-III-S-Grind-Wedge-Chrome-Beauty_ad946397-1eb7-4acb-aec7-17001a11f9b2.jpg?v=1765308881',
     productUrl: 'https://www.pxg.com/products/sugar-daddy-iii-wedges',
     playerType: ['low', 'mid'],
     description:
