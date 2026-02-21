@@ -3,11 +3,11 @@
 
 @theme {
   --color-background: #fff;
-  --color-foreground: #171717;
-  --color-primary: #171717;
+  --color-foreground: #1E293B;
+  --color-primary: #1E293B;
   --color-primary-foreground: #fff;
   --color-border: #cfcfcf;
-  --color-muted-foreground: #737373;
+  --color-muted-foreground: #64748B;
 }
 
 /* Reset — in @layer base so Tailwind utilities can override */
