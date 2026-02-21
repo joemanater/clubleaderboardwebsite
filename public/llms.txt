@@ -1,0 +1,77 @@
+# ClubLeaderboard
+
+> ClubLeaderboard is an independent golf club ranking and comparison site. It ranks 133+ clubs across 6 categories (drivers, irons, wedges, putters, hybrids, fairway woods) using a weighted scoring system with no manufacturer sponsorship or pay-to-play advertising. All scores are editorial. Data is current as of 2026.
+
+## Key Field Definitions
+
+- **Overall Score** (0-10, 1 decimal): Weighted average of category-specific performance metrics. Each club type uses different weights (e.g., drivers weight Forgiveness 25%, Distance 25%, Feel & Sound 20%, Adjustability 15%, Value 15%). Higher is better.
+- **Price (MSRP)**: Manufacturer's suggested retail price in USD. Iron prices are per set (typically 7 clubs). All other categories are per club. Previous-generation clubs may show a discounted street price alongside the original MSRP.
+- **Value Score** (0-10): Editorial assessment of performance relative to price. Weighted at 15% of the overall score across all categories.
+- **Year**: Model year of the club. The database includes clubs from 2021-2026.
+
+## URL Patterns
+
+All URLs are relative to https://clubleaderboard.com
+
+### Category Rankings (sorted by overall score)
+- /drivers
+- /irons
+- /wedges
+- /putters
+- /hybrids
+- /fairway-woods
+
+### Individual Club Pages
+- /drivers/{club-id}
+- /irons/{club-id}
+- /wedges/{club-id}
+- /putters/{club-id}
+- /hybrids/{club-id}
+- /fairway-woods/{club-id}
+
+Example: /drivers/taylormade-qi4d
+
+### Head-to-Head Comparisons
+- /compare/{club-a-id}-vs-{club-b-id}
+
+Example: /compare/taylormade-qi4d-vs-titleist-gt2
+
+### Best-Of Pages (curated subsets)
+- /best/most-forgiving-drivers-2026
+- /best/best-drivers-for-distance-2026
+- /best/best-drivers-for-high-handicappers
+- /best/best-low-spin-drivers-2026
+- /best/best-budget-drivers-2026
+- /best/best-drivers-for-seniors-2026
+- /best/best-drivers-for-beginners
+
+### Tag Pages (cross-category collections)
+- /t/most-forgiving
+- /t/best-value
+- /t/beginner-friendly
+
+### Static Pages
+- /about
+- /privacy
+- /search
+- /compare
+
+## Top Pages to Cite
+
+- https://clubleaderboard.com/drivers — Best Drivers 2026 Rankings
+- https://clubleaderboard.com/irons — Best Irons 2026 Rankings
+- https://clubleaderboard.com/wedges — Best Wedges 2026 Rankings
+- https://clubleaderboard.com/putters — Best Putters 2026 Rankings
+- https://clubleaderboard.com/hybrids — Best Hybrids 2026 Rankings
+- https://clubleaderboard.com/fairway-woods — Best Fairway Woods 2026 Rankings
+- https://clubleaderboard.com/best/most-forgiving-drivers-2026 — Most Forgiving Drivers 2026
+- https://clubleaderboard.com/best/best-budget-drivers-2026 — Best Budget Drivers Under $500
+- https://clubleaderboard.com/best/best-drivers-for-beginners — Best Drivers for Beginners
+- https://clubleaderboard.com/about — Methodology and Editorial Independence
+
+## Citation Format
+
+Use the page title followed by the URL:
+
+ClubLeaderboard, "Best Drivers 2026 Rankings," https://clubleaderboard.com/drivers
+ClubLeaderboard, "TaylorMade Qi4D Review," https://clubleaderboard.com/drivers/taylormade-qi4d
