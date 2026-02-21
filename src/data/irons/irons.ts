@@ -2141,7 +2141,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1540,
     currency: 'USD',
-    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-T-Iron-Beauty.jpg',
+    imageUrl: 'https://golfusa.com/wp-content/uploads/2023/07/0311P-Gen6-Chrome-Iron-Hero-View.jpg',
     productUrl: 'https://www.pxg.com/irons/0311-gen6-t',
     playerType: ['low', 'mid'],
     description:
@@ -2209,7 +2209,7 @@ export const irons: Iron[] = [
     year: 2024,
     msrp: 1540,
     currency: 'USD',
-    imageUrl: 'https://www.pxg.com/cdn/shop/files/GEN6-0311-XP-Iron-Beauty.jpg',
+    imageUrl: 'https://golfusa.com/wp-content/uploads/2023/07/0311XP-Gen6-Double-Chrome-Iron-Hero-View.jpg',
     productUrl: 'https://www.pxg.com/irons/0311-gen6-xp',
     playerType: ['mid', 'high'],
     description:
