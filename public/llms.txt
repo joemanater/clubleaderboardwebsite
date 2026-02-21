@@ -1,6 +1,6 @@
 # ClubLeaderboard
 
-> ClubLeaderboard is an independent golf club ranking and comparison site. It ranks 133+ clubs across 6 categories (drivers, irons, wedges, putters, hybrids, fairway woods) using a weighted scoring system with no manufacturer sponsorship or pay-to-play advertising. All scores are editorial. Data is current as of 2026.
+> ClubLeaderboard is an independent golf club ranking and comparison site. It ranks 151+ clubs across 6 categories (drivers, irons, wedges, putters, hybrids, fairway woods) using a weighted scoring system with no manufacturer sponsorship or pay-to-play advertising. All scores are editorial. Data is current as of 2026.
 
 ## Key Field Definitions
 

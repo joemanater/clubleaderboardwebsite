@@ -9,7 +9,7 @@ export const CATEGORIES = {
   drivers: {
     slug: 'drivers',
     label: 'Drivers',
-    icon: '\u{1F3CC}\uFE0F',
+    icon: '',
     description: 'Find the longest and most forgiving drivers for your game',
     data: drivers,
     scoreFields: ['forgiveness', 'distance', 'feelAndSound', 'adjustability', 'value'],
@@ -24,7 +24,7 @@ export const CATEGORIES = {
   irons: {
     slug: 'irons',
     label: 'Irons',
-    icon: '\u{1F3AF}',
+    icon: '',
     description: 'Game-improvement to players irons ranked and compared',
     data: irons,
     scoreFields: ['forgiveness', 'distance', 'feelAndFeedback', 'workability', 'aesthetics', 'value'],
@@ -40,7 +40,7 @@ export const CATEGORIES = {
   wedges: {
     slug: 'wedges',
     label: 'Wedges',
-    icon: '\u26F3',
+    icon: '',
     description: 'Spin, control, and versatility around the greens',
     data: wedges,
     scoreFields: ['spinAndControl', 'versatility', 'feelAndFeedback', 'turfInteraction', 'value'],
@@ -55,7 +55,7 @@ export const CATEGORIES = {
   putters: {
     slug: 'putters',
     label: 'Putters',
-    icon: '\u{1F573}\uFE0F',
+    icon: '',
     description: 'Blades, mallets, and everything in between',
     data: putters,
     scoreFields: ['forgiveness', 'feelAndSound', 'alignment', 'rollQuality', 'value'],
@@ -70,7 +70,7 @@ export const CATEGORIES = {
   hybrids: {
     slug: 'hybrids',
     label: 'Hybrids',
-    icon: '\u{1F500}',
+    icon: '',
     description: 'The most versatile clubs in the bag, ranked',
     data: hybrids,
     scoreFields: ['forgiveness', 'distance', 'versatility', 'turfInteraction', 'value'],
@@ -85,7 +85,7 @@ export const CATEGORIES = {
   'fairway-woods': {
     slug: 'fairway-woods',
     label: 'Fairway Woods',
-    icon: '\u{1F332}',
+    icon: '',
     description: 'Off the tee or off the deck — the best fairway woods ranked',
     data: fairwayWoods,
     scoreFields: ['forgiveness', 'distance', 'versatility', 'feelAndSound', 'value'],
@@ -105,7 +105,7 @@ export const TAGS = {
   'most-forgiving': {
     slug: 'most-forgiving',
     label: 'Most Forgiving',
-    icon: '\u{1F7E2}',
+    icon: '',
     description: 'The most forgiving clubs across every category',
     getClubs() {
       return Object.values(CATEGORIES)
@@ -121,7 +121,7 @@ export const TAGS = {
   'best-value': {
     slug: 'best-value',
     label: 'Best Value',
-    icon: '\u{1F4B0}',
+    icon: '',
     description: 'Top-performing clubs that deliver the most bang for your buck',
     getClubs() {
       return Object.values(CATEGORIES).map((cat) => ({
@@ -135,7 +135,7 @@ export const TAGS = {
   'beginner-friendly': {
     slug: 'beginner-friendly',
     label: 'Beginner Friendly',
-    icon: '\u{1F44B}',
+    icon: '',
     description: 'Easy-to-hit clubs perfect for players just getting started',
     getClubs() {
       return Object.values(CATEGORIES)
