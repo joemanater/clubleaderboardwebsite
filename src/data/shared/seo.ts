@@ -17,7 +17,7 @@ export function generateProductSEO(
     canonical: `${SITE_URL}/${slug}/${club.id}`,
     ogTitle: title,
     ogDescription: description,
-    ogImage: `${SITE_URL}${club.imageUrl}`,
+    ogImage: club.imageUrl.startsWith('http') ? club.imageUrl : `${SITE_URL}${club.imageUrl}`,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -100,9 +100,8 @@ export function generateSitemap(
   tags: string[] = [],
   bestOfPages: { slug: string }[] = []
 ): string {
-  const today = new Date().toISOString().split('T')[0];
-  const u = (loc: string, priority: string, lastmod: string = today) =>
-    `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><priority>${priority}</priority></url>`;
+  const u = (loc: string, priority: string) =>
+    `  <url><loc>${loc}</loc><priority>${priority}</priority></url>`;
 
   const urls: string[] = [u(SITE_URL, '1.0')];
 
@@ -127,14 +126,12 @@ export function generateSitemap(
     urls.push(u(`${SITE_URL}/${club.categorySlug}/${club.id}`, '0.8'));
   }
 
-  for (const comp of comparisons) {
-    urls.push(u(`${SITE_URL}/compare/${comp.slug}`, '0.7'));
-  }
-
   // Best-of pages
   for (const page of bestOfPages) {
     urls.push(u(`${SITE_URL}/best/${page.slug}`, '0.8'));
   }
+
+  // Comparison pages excluded — too many (2000+) dilute crawl budget
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -64,6 +64,7 @@ export default function ComparisonDetailPage() {
         description={`Head-to-head comparison: ${nameA} (${driverA.overallScore}/10) vs ${nameB} (${driverB.overallScore}/10). Compare forgiveness, distance, feel, adjustability, and value side by side.`}
         canonical={`${SITE_URL}/compare/${comparisonSlug}`}
         jsonLd={jsonLd}
+        noindex
       />
 
       <div className="comp-detail__header">

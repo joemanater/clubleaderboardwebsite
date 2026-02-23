@@ -1,11 +1,12 @@
 import { Helmet } from 'react-helmet-async'
 
-export default function SEOHead({ title, description, canonical, ogTitle, ogDescription, ogImage, jsonLd }) {
+export default function SEOHead({ title, description, canonical, ogTitle, ogDescription, ogImage, jsonLd, noindex }) {
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ClubLeaderboard" />
       <meta property="og:title" content={ogTitle || title} />
