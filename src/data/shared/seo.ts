@@ -86,11 +86,8 @@ export function generateCategoryRankingSEO(
         .map((club, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          item: {
-            '@type': 'Product',
-            name: club.name,
-            url: `${SITE_URL}/${category}/${club.id}`,
-          },
+          url: `${SITE_URL}/${category}/${club.id}`,
+          name: club.name,
         })),
     },
   };
