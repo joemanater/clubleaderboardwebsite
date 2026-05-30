@@ -3,26 +3,44 @@ import { BaseGolfClub, SEOMetadata, Comparison } from './types';
 const SITE_URL = 'https://clubleaderboard.com';
 const SITE_NAME = 'ClubLeaderboard';
 
+function truncate(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  const base = lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut;
+  return base.replace(/[\s,;:—-]+$/, '') + '…';
+}
+
 export function generateProductSEO(
   club: BaseGolfClub & { overallScore: number },
   categorySlug?: string
 ): SEOMetadata {
-  const title = `${club.name} Review - ${(club as any).overallScore}/10 | ${SITE_NAME}`;
-  const description = `${club.name} scores ${(club as any).overallScore}/10 in our independent testing. See detailed ratings for forgiveness, distance, feel, and more. MSRP: $${club.msrp}.`;
+  const score = (club as any).overallScore;
+  const title = `${club.name} Review - ${score}/10 | ${SITE_NAME}`;
+
+  const prefix = `${club.name} (${score}/10, $${club.msrp}): `;
+  const bodyBudget = 160 - prefix.length;
+  const body = truncate(club.description || `Independent review and ratings.`, bodyBudget);
+  const description = prefix + body;
+
   const slug = categorySlug || `${club.category}s`;
+  const absoluteImage = club.imageUrl.startsWith('http')
+    ? club.imageUrl
+    : `${SITE_URL}${club.imageUrl}`;
 
   return {
     title: title.slice(0, 60),
-    description: description.slice(0, 160),
+    description,
     canonical: `${SITE_URL}/${slug}/${club.id}`,
     ogTitle: title,
     ogDescription: description,
-    ogImage: club.imageUrl.startsWith('http') ? club.imageUrl : `${SITE_URL}${club.imageUrl}`,
+    ogImage: absoluteImage,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: club.name,
       description: club.description,
+      image: absoluteImage,
       brand: { '@type': 'Brand', name: club.manufacturer },
       offers: {
         '@type': 'Offer',
@@ -34,7 +52,7 @@ export function generateProductSEO(
         '@type': 'Review',
         reviewRating: {
           '@type': 'Rating',
-          ratingValue: (club as any).overallScore,
+          ratingValue: score,
           bestRating: 10,
           worstRating: 1,
         },
