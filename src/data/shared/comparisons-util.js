@@ -257,8 +257,14 @@ export function getRelatedComparisons(driverId, allSlugs, allDrivers) {
   const driver = allDrivers.find((d) => d.id === driverId)
   if (!driver) return []
 
-  // Find all slugs that contain this driver
-  const relevant = allSlugs.filter((slug) => slug.includes(driverId))
+  // Find slugs whose parsed ids match this driver exactly.
+  // Substring matching here previously matched siblings like `${driverId}-d`
+  // and `${driverId}-fast`, producing duplicate comparison links that
+  // tripped Google's spam detection and led to mass deindexing in 2026-03.
+  const relevant = allSlugs.filter((slug) => {
+    const parsed = parseComparisonSlug(slug)
+    return parsed && (parsed.idA === driverId || parsed.idB === driverId)
+  })
 
   // Score each by relevance
   const scored = relevant.map((slug) => {
